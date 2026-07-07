@@ -3,77 +3,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>造園屋デイリー情報 ｜ 2026年7月6日</title>
+<title>造園屋デイリー情報 ｜ 2026年7月7日</title>
 <style>
- * { box-sizing: border-box; margin: 0; padding: 0; }
- body { font-family: 'メイリオ', Meiryo, sans-serif; background: #eef3ec; color: #233; line-height: 1.7; }
- header { background: linear-gradient(135deg, #1f5c2e, #5a8f4f); color: #fff; padding: 28px 20px; text-align: center; }
- header h1 { font-size: 1.6rem; letter-spacing: .04em; }
- header p { margin-top: 6px; font-size: .85rem; opacity: .9; }
- .wrap { max-width: 820px; margin: 26px auto; padding: 0 14px 50px; }
- .cat { display: flex; align-items: center; gap: 8px; margin: 26px 0 10px; font-size: 1.1rem; font-weight: bold; color: #1f5c2e; border-left: 6px solid #5a8f4f; padding-left: 10px; }
- .cat small { font-weight: normal; color: #789; font-size: .75rem; }
- details { background: #fff; border: 1px solid #d6e2d2; border-radius: 8px; margin-bottom: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
- summary { cursor: pointer; padding: 13px 16px; font-weight: bold; font-size: .96rem; list-style: none; position: relative; padding-right: 40px; }
- summary::-webkit-details-marker { display: none; }
- summary::after { content: "＋"; position: absolute; right: 16px; top: 12px; color: #5a8f4f; font-weight: bold; transition: transform .2s; }
- details[open] summary::after { content: "－"; }
- summary:hover { background: #f3f8f1; }
- .body { padding: 4px 18px 16px; font-size: .9rem; color: #445; border-top: 1px dashed #dde7da; }
- .body a { color: #2a7d3a; word-break: break-all; }
- .memo { display:inline-block; background:#f3f8f1; border:1px solid #cfe3cc; border-radius:6px; padding:6px 10px; margin-top:8px; font-size:.85rem; color:#2a5d34; }
- .tag { display:inline-block; background:#e8f3e6; color:#2a7d3a; border:1px solid #b9d8b3; border-radius:4px; padding:1px 7px; font-size:.72rem; margin-left:6px; vertical-align:middle; }
- .tag-warn { background:#fdeede; color:#c05a1a; border-color:#f0c496; }
- .chance { background:#fff8e8; border:1px solid #f0d79a; border-radius:8px; padding:12px 16px; margin-bottom:8px; font-size:.9rem; color:#5a4320; box-shadow:0 1px 3px rgba(0,0,0,.05); }
- .chance b { color:#b56b00; }
- footer { text-align:center; font-size:.78rem; color:#889; margin-top:30px; }
+ :root{
+   --ink:#243324;          /* 文字：緑みチャコール */
+   --accent:#2e5d34;       /* 差し色：深緑（1色主義） */
+   --accent-soft:#5a8f4f;  /* 差し色の淡いトーン */
+   --cream:#f4f1e8;        /* ベースB：生成り */
+   --paper:#ffffff;        /* ベースA：白 */
+   --gold:#c8a24a;         /* 補助：ここぞの一点強調のみ */
+ }
+ *{box-sizing:border-box;margin:0;padding:0;}
+ body{font-family:'メイリオ',Meiryo,sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+
+ /* 固定ヘッダー */
+ header{background:linear-gradient(135deg,#1f4a26,#2e5d34 55%,#5a8f4f);color:#fff;padding:30px 20px 26px;text-align:center;position:relative;overflow:hidden;}
+ header::after{content:"🌲";position:absolute;right:16px;bottom:-6px;font-size:3.4rem;opacity:.18;}
+ header .kicker{font-size:.72rem;letter-spacing:.28em;opacity:.85;}
+ header h1{font-size:1.7rem;letter-spacing:.05em;margin:6px 0 4px;}
+ header p{font-size:.83rem;opacity:.92;}
+
+ .wrap{max-width:840px;margin:0 auto;padding:0;}
+ section{padding:26px 18px 10px;}
+ section.paper{background:var(--paper);}
+ section.cream{background:var(--cream);}
+
+ /* 反転バッジ＝セクションラベル */
+ .badge{display:inline-block;background:var(--accent);color:#fff;font-size:.74rem;font-weight:bold;letter-spacing:.12em;padding:5px 14px;border-radius:4px 4px 4px 0;box-shadow:0 2px 5px rgba(46,93,52,.25);}
+ .cat{display:flex;align-items:baseline;gap:10px;margin:8px 0 16px;}
+ .cat h2{font-size:1.18rem;color:var(--ink);font-weight:bold;}
+ .cat h2 em{color:var(--accent);font-style:normal;}
+ .cat small{color:#8a9587;font-size:.74rem;font-weight:normal;}
+
+ /* 開閉カード（初期は全て閉じる） */
+ .item{position:relative;background:#fff;border:1px solid #dfe6d9;border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .cream .item{background:#fbfaf5;}
+ .num{position:absolute;left:8px;top:2px;font-size:2.6rem;font-weight:900;color:var(--accent);opacity:.11;line-height:1;pointer-events:none;}
+ summary{cursor:pointer;padding:14px 44px 14px 54px;font-weight:bold;font-size:.98rem;list-style:none;position:relative;color:var(--ink);}
+ summary::-webkit-details-marker{display:none;}
+ summary::after{content:"＋";position:absolute;right:16px;top:13px;color:var(--accent-soft);font-weight:bold;font-size:1.1rem;transition:transform .2s;}
+ details[open] summary::after{content:"－";}
+ summary:hover{background:#f3f8f1;}
+ .body{padding:6px 20px 18px 54px;font-size:.91rem;color:#3a473a;border-top:1px dashed #e0e8dc;}
+ .body a{color:var(--accent);word-break:break-all;}
+ b{color:var(--accent);}
+ .memo{display:block;background:#f2f7ef;border-left:4px solid var(--accent-soft);border-radius:0 6px 6px 0;padding:8px 12px;margin-top:12px;font-size:.86rem;color:#2a5d34;}
+ .memo b{color:#1f4a26;}
+
+ /* タグ */
+ .tag{display:inline-block;background:#eaf3e7;color:var(--accent);border:1px solid #b9d8b3;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-warn{background:#fdeede;color:#c05a1a;border-color:#f0c496;}
+ .tag-gold{background:#f7efd7;color:#8a6a12;border-color:var(--gold);}
+
+ /* チャンス＝コールアウト箱（上辺に差し色バー） */
+ .chance{border:1px solid #e6dcc0;border-radius:10px;margin:6px 0 10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .chance .head{background:var(--accent);color:#fff;font-weight:bold;font-size:.86rem;letter-spacing:.06em;padding:8px 16px;}
+ .chance .in{background:#fffdf6;padding:12px 16px;font-size:.9rem;color:#4a4326;}
+ .chance .in b{color:#8a6a12;}
+
+ /* プルクオート（合言葉） */
+ .pull{position:relative;max-width:680px;margin:22px auto 4px;padding:18px 22px;border:1px solid #cfe0c9;border-left:5px solid var(--accent);border-radius:0 10px 10px 0;background:#fff;font-size:1.02rem;color:var(--ink);}
+ .pull small{display:block;text-align:right;margin-top:8px;color:#8a9587;font-size:.78rem;font-weight:normal;}
+
+ footer{background:#1f4a26;color:#dfe8da;text-align:center;font-size:.76rem;padding:20px 16px 26px;margin-top:14px;}
+ footer .brand{font-weight:bold;letter-spacing:.14em;color:#fff;font-size:.9rem;margin-bottom:4px;}
+ footer .tree{font-size:1.1rem;}
 </style>
 </head>
 <body>
 <header>
+ <div class="kicker">MIDORI ZOEN ｜ DAILY</div>
  <h1>🌳 造園屋デイリー情報</h1>
- <p>2026年7月6日（月）｜ 業界ニュース・経営/法律・話題・トレンド　自動収集レポート</p>
+ <p>2026年7月7日（火）｜ 業界ニュース・トレンド・学習メモ　自動収集レポート</p>
 </header>
 <div class="wrap">
 
- <div class="cat">📰 業界ニュース <small>樹木の病害虫・防除シーズン</small></div>
- <details>
-  <summary>「松くい虫」という虫はいない？— マツ材線虫病の防除シーズンが本格化<span class="tag-warn">安全・受注機会</span></summary>
-  <div class="body">マツを枯らす「松くい虫被害」。実は<b>「松くい虫」という名前の虫は存在せず</b>、正体は<b>マツ材線虫病</b>という伝染病です。犯人は体長1mm足らずの<b>マツノザイセンチュウ</b>（線虫）で、それを木から木へ運ぶ“運び屋”が<b>マツノマダラカミキリ</b>。線虫がマツの中で爆発的に増えると水を吸い上げられなくなり、夏から秋に急速に枯れます。カミキリが飛び回る<b>初夏〜夏がまさに感染シーズン</b>で、各自治体は薬剤散布・樹幹注入（予防）と<b>被害木の伐倒駆除</b>（カミキリが飛び立つ前に枯れマツを処理）を進めています。防除は<b>「予防・駆除・再生（抵抗性マツの植栽）」の3本柱</b>が基本です。
-  <div class="memo">🔰 若手メモ：赤茶色に枯れたマツを見たら「枯れてから切ればいい」はNG。中のカミキリが羽化して飛び立つ前に伐倒・処理しないと、周りのマツに被害が広がります。</div><br>
-  <a href="https://www.pref.miyagi.jp/soshiki/sinrin/matsukui.html" target="_blank">出典: 宮城県 松くい虫被害と対策</a>　／　<a href="https://www.city.azumino.nagano.jp/site/kankyo-gomi/1165.html" target="_blank">安曇野市 松くい虫被害のメカニズムと対策</a></div>
- </details>
- <details>
-  <summary>【現場注意】チャドクガ — 触らなくても“毒の毛”が飛んでくる、剪定作業の天敵<span class="tag-warn">労働安全</span></summary>
-  <div class="body"><b>ツバキ・サザンカ・チャ</b>などツバキ科の木に付く毒毛虫<b>チャドクガ</b>。幼虫は<b>年2回（4〜6月と8〜9月）</b>発生し、いまは成虫（ガ）の時期＝<b>次の世代の卵が産みつけられる時期</b>です。怖いのは<b>毒針毛（どくしんもう）</b>という微細な毛で、<b>直接触らなくても風に乗って飛散</b>し、皮膚に付くと1〜2日後に強いかゆみの発疹が出て2〜3週間続きます。脱皮殻や死骸、成虫にも毒針毛があり、<b>8月上中旬の「孵化直後・集団でいるうち」が駆除の好機</b>。庭木の管理を請け負うプロにとって、お客様への注意喚起と自衛の両方が必要な季節です。
-  <div class="memo">🔰 若手メモ：ツバキ・サザンカの剪定前は<b>葉裏の点検</b>を習慣に。作業は長袖・手袋・首元ガードで。「葉が透けるほど食われた枝」は要警戒サインです。</div><br>
-  <a href="https://gardenstory.jp/gardening/84517" target="_blank">出典: GardenStory 毒針を飛ばす毛虫チャドクガの発生時期と対策</a>　／　<a href="https://www.city.sakai.lg.jp/kenko/kenko/sodan/gaichu/mijika/chadoguga.html" target="_blank">堺市 チャドクガ</a></div>
- </details>
- <div class="chance">💪 <b>みどり造園の強みが活きるチャンス</b><br>枯れマツの<b>伐倒駆除は「高くて・重くて・急ぐ」仕事</b>——高所作業車・ユニック車（移動式クレーン）・パッカー車を自社保有する当社の独壇場です。社寺・公園・企業緑地の枯損マツは放置すると倒木と被害拡大の二重リスクなので、「見つけたら早めに」の提案が刺さります。チャドクガも<b>「ツバキ・サザンカの点検＋発生前の剪定＋発生時の駆除」セット</b>で、個人邸・施設の管理契約につなげるチャンス。夏の病害虫は、プロの出番が一番分かりやすい季節です。</div>
+ <!-- 業界ニュース -->
+ <section class="paper">
+  <div class="cat"><span class="badge">業界ニュース</span><h2>街路樹の<em>点検・猛暑対策</em>が動く</h2><small>行政の方針転換</small></div>
 
- <div class="cat">🌲 流行りの樹木 <small>7月の花木</small></div>
- <details>
-  <summary>夕方に咲く“ピンクの絹糸”「ネムノキ（合歓木）」— 梅雨明けの空に映える夏の風物詩<span class="tag">トレンド</span></summary>
-  <div class="body">ネムノキはマメ科の落葉高木で、<b>6〜7月に絹糸を束ねたようなピンクの花</b>を咲かせます。花は<b>夕方に開き、夜には葉が閉じて“眠る”</b>（就眠運動）ことが名前の由来。繊細な羽状の葉と傘形の樹形が涼しげで、和風・雑木の庭からリゾート風の庭まで幅広く合います。乾燥ややせ地にも強い先駆樹種で、近年は<b>小型で葉色の美しい園芸品種</b>も人気。「夏に花のある高木」という希少な引き出しとして、提案の幅を広げてくれる木です。
-  <div class="memo">🔰 若手メモ：「就眠運動」＝夜に葉を閉じる動き。お客様との会話ネタに最適。「夜、葉っぱが眠るんですよ」の一言で木への愛着がぐっと増します。</div><br>
-  <a href="https://www.uekipedia.jp/%EF%BC%97%E6%9C%88%E3%81%AB%E5%92%B2%E3%81%84%E3%81%A6%E3%81%84%E3%82%8B%E8%8A%B1%E6%9C%A8/" target="_blank">出典: 庭木図鑑 植木ペディア 7月に咲いている花木</a></div>
- </details>
+  <div class="item"><div class="num">1</div>
+   <details>
+    <summary>国交省が「街路樹の点検ガイドライン」を策定 — 年1回の巡回点検を推奨<span class="tag-warn">受注機会</span></summary>
+    <div class="body">国土交通省は、街路樹の<b>倒木・落枝による事故が相次いだ</b>ことを受け、2026年3月に自治体向けの<b>点検ガイドライン</b>を策定・通知しました。<b>緊急輸送道路や通学路沿い</b>の街路樹を優先し、<b>年1回程度の定期巡回</b>を基本とする内容です。背景には深刻な数字があり、2018〜22年の5年間で<b>平均年およそ5,200本</b>の街路樹が強風や病害で倒れ、倒木に絡む人身事故は21年4月〜24年11月で<b>33件</b>にのぼります。一方で徒歩巡回を行っていない自治体は<b>市町村で68%</b>にのぼり、人員・予算不足が課題です。植樹ラッシュから半世紀が過ぎ、<b>寿命・老朽化した高木</b>が全国で増えていることが根っこにあります。
+    <div class="memo">🔰 <b>若手メモ</b>：点検で危険と判断された高木は「診断 → 剪定 or 伐採」の流れで仕事になります。行政が“点検の年1回ルール”を敷くほど、危険木を安全に処理できる業者の出番が増えます。</div>
+    <a href="https://www.nikkei.com/article/DGXZQOUF308IY0Q6A330C2000000/" target="_blank">出典: 日本経済新聞「通学路などの街路樹、年1回点検 国交省が自治体向け指針」</a>　／　<a href="https://www.nikkei.com/article/DGXZQOUE30BND0Q5A430C2000000/" target="_blank">同「突然倒れる街路樹、年5200本」</a></div>
+   </details>
+  </div>
 
- <div class="cat">🌸 流行りの花 <small>植栽・提案のトレンド</small></div>
- <details>
-  <summary>星形の花が夏中咲き続ける「ペンタス」— 猛暑の公共花壇の定番<span class="tag">トレンド</span></summary>
-  <div class="body">ペンタスは熱帯アフリカ原産の多年草（日本では一年草扱いが多い）。<b>星形の小花が30〜40輪、手まり状に集まって咲き</b>、<b>春から秋まで途切れず開花</b>します。何より<b>暑さに非常に強く</b>、猛暑で他の花がバテる真夏も元気に咲き続けるため、<b>公園や公共花壇での採用が増加中</b>。赤・ピンク・白・紫と花色も豊富で、花壇の縁取りから寄せ植えまで使い勝手は抜群です。「夏の花壇が寂しくなる」というお客様への即戦力提案に。
-  <div class="memo">🔰 若手メモ：真夏の花壇は「暑さに強い」が絶対条件。ペンタス＋ポーチュラカ＋ジニアあたりを覚えておくと、夏の植栽提案で困りません。</div><br>
-  <a href="https://www.hyponex.co.jp/plantia/25027/" target="_blank">出典: Plantia 暑さに強い花25選 夏の花壇づくりのポイント</a></div>
- </details>
+  <div class="item"><div class="num">2</div>
+   <details>
+    <summary>記録的猛暑で見直される「緑陰」— 街路樹は“減らす”より“育てる”へ<span class="tag">行政動向</span></summary>
+    <div class="body">各地で<b>街路樹の本数がピークから減少</b>しています。北海道・帯広市では2011年度に3万本を超えた街路樹が25年度には<b>2万7千本まで減少</b>。倒木の恐れがある古木を伐採する一方、<b>予算の制約で植え替えが進まない</b>のが実情です。しかし専門家は「街路樹は<b>景観と熱中症対策（緑陰）の両面</b>で価値があり、減らすのではなく<b>育てる</b>ことが重要」と指摘します。記録的猛暑が続くなか、木陰をつくる街路樹の役割は年々高まっており、<b>「切る」だけでなく「健全に保ち・植え継ぐ」</b>方向へ関心が動いています。
+    <div class="memo">🔰 <b>若手メモ</b>：緑陰＝木陰のこと。「暑さ対策として木を守る」という追い風は、単純伐採より<b>適正剪定・樹勢回復・植え替え提案</b>という“育てる仕事”につながります。</div>
+    <a href="https://www.hokkaido-np.co.jp/article/1328168/" target="_blank">出典: 北海道新聞「暑さ厳しいのに木陰減る帯広 市内の街路樹ピークの1割減」</a>　／　<a href="https://www.nikkei.com/article/DGXZQOUE241YB0U6A220C2000000/" target="_blank">日本経済新聞「『緑の日傘』消える日本、街路樹50万本減」</a></div>
+   </details>
+  </div>
 
- <div class="cat">📝 今日のひとこと学習メモ <small>1つ覚えて帰ろう</small></div>
- <details>
-  <summary>毛虫に触れたら「こすらず・テープで取って・流水」— 現場の応急処置3原則<span class="tag">豆知識</span></summary>
-  <div class="body">チャドクガなどの毒毛虫に触れて（または毛が飛んできて）かゆみを感じたら、<b>①こすらない</b>（毒針毛が皮膚に刺さり広がる）<b>②ガムテープ等を軽く当てて毒針毛を取り除く</b> <b>③流水と石けんでよく洗い流す</b>——この3原則が応急処置の基本です。作業着に付いた毛も要注意で、<b>脱ぐときに顔や首に触れさせない・他の洗濯物と分けて洗う</b>こと。症状が強いときは市販のかゆみ止めではなく皮膚科へ。<b>「かゆい」と思ったらまずテープ</b>、夏の現場の合言葉です。</div>
- </details>
+  <div class="chance">
+   <div class="head">💪 みどり造園の強みが活きるチャンス</div>
+   <div class="in">行政が「年1回点検」を本気で回し始めると、<b>危険木の伐採・特殊伐採</b>という“急いで・安全に・重量物を”処理する仕事が確実に増えます。<b>高所作業車・ユニック車（移動式クレーン）・パッカー車を自社保有</b>する当社は、電線際や交通量の多い道路沿いの高木でも一貫対応できるのが強み。さらに「減らすより育てる」流れは、<b>適正剪定・樹勢回復・植え替え</b>の継続契約に直結します。「点検で赤信号が出た木、うちなら安全に下ろせます」——この一言が刺さる季節です。</div>
+  </div>
+ </section>
 
- <footer>※本レポートは公開Webニュースを自動収集・要約したものです。写真は転載せず出典リンクで示しています。<br>生成: 2026-07-06</footer>
+ <!-- 流行りの樹木・花 -->
+ <section class="cream">
+  <div class="cat"><span class="badge">今月の樹木・花</span><h2>猛暑に<em>負けない</em>夏の主役</h2><small>7月のトレンド</small></div>
+
+  <div class="item"><div class="num">3</div>
+   <details>
+    <summary>夏を100日彩る「サルスベリ（百日紅）」— 猛暑に強い夏の代表花木<span class="tag">トレンド</span></summary>
+    <div class="body">サルスベリはミソハギ科の落葉高木で、<b>7〜9月の約100日間</b>にわたり紅・ピンク・白・紫の花を咲かせることから「<b>百日紅（ひゃくじつこう）</b>」と呼ばれます。フリルのような花が房状に付き、<b>暑さと乾燥に非常に強い</b>ため、花の少ない真夏の庭・公園・街路で貴重な彩りに。名前は<b>幹がツルツルで猿も滑る</b>ことに由来し、独特のなめらかな樹肌も観賞価値があります。<b>咲き終わった花房を切ると次の花が上がる</b>ので、剪定で長く楽しめるのも提案しやすいポイント。夏に花のある高木の“定番の切り札”です。
+    <div class="memo">🔰 <b>若手メモ</b>：花がら（咲き終わり）を切ると再び花芽が上がり、夏中咲きます。「切ると長持ちしますよ」はお客様に喜ばれる管理提案です。</div>
+    <a href="https://lovegreen.net/flower/p174611/" target="_blank">出典: LOVEGREEN「6月・7月・8月に咲く夏の花木と草花」</a></div>
+   </details>
+  </div>
+
+  <div class="item"><div class="num">4</div>
+   <details>
+    <summary>青紫の穂が涼しげ「セイヨウニンジンボク」— いま人気急上昇のシンボルツリー<span class="tag-gold">注目</span></summary>
+    <div class="body">セイヨウニンジンボク（Vitex）はシソ科の落葉低〜中木で、<b>7〜9月に青紫の細い花穂</b>をたくさん立ち上げます。<b>乾燥・暑さ・やせ地に強く手間がかからない</b>うえ、<b>ハーブのような爽やかな香り</b>と涼しげな花色が今の庭のトレンドにぴったりで、<b>シンボルツリーとして採用が増えています</b>。ラベンダーが夏に弱い地域の“代役”としても人気。落葉樹なので冬は日を通し、夏は葉を茂らせる——住宅の南面にも向く扱いやすい一本です。
+    <div class="memo">🔰 <b>若手メモ</b>：Vitex＝バイテックスとも呼ばれる洋風トレンド樹。「暑さに強くて青い花・いい香り」の三拍子で、モダンな庭の提案に強い引き出しになります。</div>
+    <a href="https://provenwinners.jp/magazine/summer_flower_tree/" target="_blank">出典: PROVEN WINNERS「夏に花が咲く木」</a></div>
+   </details>
+  </div>
+
+  <div class="item"><div class="num">5</div>
+   <details>
+    <summary>暑さ知らずで咲き続ける「ジニア（百日草）」— 夏花壇の働きもの<span class="tag">トレンド</span></summary>
+    <div class="body">ジニア（和名・百日草）はキク科の一年草で、名前どおり<b>初夏から霜が降りるまで長期間</b>次々と花を咲かせます。<b>高温・乾燥に非常に強く</b>、真夏の花壇が最も苦しい時期でも元気に咲き続けるため、<b>公共花壇・ロータリー・沿道植栽の定番</b>。赤・黄・オレンジ・白・複色と色数が豊富で、背の低い品種から切り花向きの高性種まで幅広く、寄せ植えの主役にも縁取りにも使えます。「夏に花が絶えない花壇」をつくる即戦力です。
+    <div class="memo">🔰 <b>若手メモ</b>：真夏の植栽提案は<b>ジニア・ペンタス・ポーチュラカ・ニチニチソウ</b>を覚えておけば安心。どれも「暑さに強い」が共通点です。</div>
+    <a href="https://lovegreen.net/flower/p174611/" target="_blank">出典: LOVEGREEN「夏に咲く花木と草花35選」</a></div>
+   </details>
+  </div>
+ </section>
+
+ <!-- 学習メモ -->
+ <section class="paper">
+  <div class="cat"><span class="badge">今日の学習メモ</span><h2>1つ<em>覚えて</em>帰ろう</h2><small>豆知識</small></div>
+  <div class="item"><div class="num">6</div>
+   <details>
+    <summary>危険な木の見分け方 —「打診・根元のキノコ・傾き」の3チェック<span class="tag">豆知識</span></summary>
+    <div class="body">街路樹の点検が話題ですが、危険木の初期サインは<b>道具がなくても気づけます</b>。①<b>打診</b>＝幹を軽く叩き、<b>「ポンポン」と軽い（空洞）音</b>がしたら内部の腐朽を疑う（健全な幹は「コツコツ」と詰まった音）。②<b>根元のキノコ</b>＝幹の根元や露出根に<b>キノコ（子実体）</b>が出ていたら、木材腐朽菌が中を蝕んでいるサインで倒木リスク大。③<b>傾き・地際の異変</b>＝木の傾きが急に進む、<b>根元の地面が持ち上がる・ひび割れる</b>のは根が切れかけている危険信号。<b>「叩いて・見て・足元を確認」</b>——この3点をクセにすると、事故を未然に防げます。
+    <div class="memo">🔰 <b>若手メモ</b>：健全な幹は詰まった音、腐朽は軽い音。現場で高木の前を通るとき、幹を一つ叩く習慣をつけると“木を診る目”が育ちます。</div></div>
+   </details>
+  </div>
+
+  <div class="pull">
+   減らすのではなく、<b>安全に守り、育てて植え継ぐ</b>。それができるのは、設備と技術を持つ造園屋だけ。
+   <small>― みどり造園 デイリー情報</small>
+  </div>
+ </section>
+
+ <footer>
+  <div class="brand">🌲 みどり造園</div>
+  ※本レポートは公開Webニュースを自動収集・要約したものです。写真は転載せず出典リンクで示しています。<br>
+  生成: 2026-07-07
+ </footer>
 </div>
 </body>
 </html>
