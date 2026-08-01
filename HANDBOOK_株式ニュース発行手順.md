@@ -55,6 +55,17 @@
 6. mainへコミット＆プッシュ（push失敗時はネットワークエラーに限り2s/4s/8s/16sで最大4回リトライ）
 7. 完了報告はURLを単独の行で書く（全角カッコでURLを囲まない）
 
+## 3-a. LINE送信（毎号必ず・2紙まとめて1通・2026-08-01 ユーザー指示）
+
+株式ニュースのプッシュ完了後、けさ発行済みの造園ニュースと合わせて
+**1日1通だけ**ユーザー本人のLINEへ送る（造園側では送らない取り決め）。
+
+- fx-race-line リポジトリの GitHub Actions `notify.yml` を
+  `mcp__github__actions_run_trigger`（method=run_workflow, ref=main）で起動
+- inputs.message の形（改行は `\n` と書く。URLの前後に空白か改行必須）:
+  `🌅 M月D日の朝刊です\n\n🌳 造園屋デイリー情報\n📍 https://helmetto2-prog.github.io/zoennews/ \n（造園トップ記事の一言）\n\n📈 株式デイリー情報\n📍 https://helmetto2-prog.github.io/zoennews/kabu/ \n（株式トップ記事の一言）`
+- 起動に失敗したらチャットの完了報告にその旨を書く
+
 ## 4. してはいけないこと
 
 - 特定銘柄の売買推奨・断定的な相場予想（フッターの免責を毎号必ず入れる）
