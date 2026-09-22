@@ -90,20 +90,27 @@
 6. mainへコミット＆プッシュ（push失敗時はネットワークエラーに限り2s/4s/8s/16sで最大4回リトライ）
 7. 完了報告はURLを単独の行で書く（全角カッコでURLを囲まない）
 
-## 3-a. LINE送信（毎号必ず・2紙まとめて1通・2026-08-01 ユーザー指示）
+## 3-a. 朝刊の文面をファイルに置く（毎号必ず・2026-09-22 ユーザー指示「毎朝のLINEは1通に」）
 
-株式ニュースのプッシュ完了後、けさ発行済みの造園ニュースと合わせて
-**1日1通だけ**ユーザー本人のLINEへ送る（造園側では送らない取り決め）。
+**このルーティンからは LINE を送らない（notify.yml を起動しない）。**
+2026-09-22 から、毎朝のLINEは自宅PC（まとん）が **6:40 に1通だけ**送る。
+その1通に「けさの朝刊（造園＋株式）」を載せるため、株式ニュースのプッシュと同じコミットで
+次のファイルを書く（上書き）:
 
-- fx-race-line リポジトリの GitHub Actions `notify.yml` を
-  `mcp__github__actions_run_trigger`（method=run_workflow, ref=main）で起動
-- inputs.message の形（改行は `\n` と書く。URLの前後に空白か改行必須）:
-  `🌅 M月D日の朝刊です\n\n🌳 造園屋デイリー情報\n📍 https://helmetto2-prog.github.io/zoennews/ \n（造園トップ記事の一言）\n\n📈 株式デイリー情報\n📍 https://helmetto2-prog.github.io/zoennews/kabu/ \n（株式トップ記事の一言）`
-- 起動に失敗したらチャットの完了報告にその旨を書く
-- **送信後の結果確認（2026-08-07追加）**: 起動の204応答は「受け付け」にすぎない。
-  60〜180秒後に `https://api.github.com/repos/helmetto2-prog/fx-race-line/actions/workflows/notify.yml/runs?per_page=1`
-  で最新runのconclusionを確認し、success以外なら「（再送）」を付けて1回だけ再送する
-  （8/7朝にActions側ハング→cancelledでLINE未達が発生した教訓）
+- パス: `kabu/morning_line.txt`（UTF-8・改行はふつうの改行）
+- 1行目: 発行日 `YYYY-MM-DD`（自宅PCはこの行が「きょう」の時だけ使う）
+- 2行目以降: 朝刊の本文。形は従来と同じ（URLの前後に空白か改行必須）:
+  ```
+  🌅 M月D日の朝刊です
+  🌳 造園屋デイリー情報 → https://helmetto2-prog.github.io/zoennews/
+  （造園トップ記事の一言）
+  📈 株式デイリー情報 → https://helmetto2-prog.github.io/zoennews/kabu/
+  （株式トップ記事の一言）
+  ```
+- 休場日で株式が休場版のときも同じ形で書く（「休場版」と一言添える）。
+- ファイルが 6:40 までに更新されていない朝は、自宅PCが「朝刊 → URL」だけの1行で代わりに送る。
+  だから **6:30 までにプッシュを終える**こと。遅れた分は翌朝まで送られない。
+- 旧方式（notify.yml を直接起動して2紙まとめて送る・2026-08-01〜09-21）は廃止。
 
 ## 4. してはいけないこと
 
