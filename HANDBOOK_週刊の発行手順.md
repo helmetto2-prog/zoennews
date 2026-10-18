@@ -57,6 +57,7 @@
   import hashlib; hashlib.sha1(b64_string.encode()).hexdigest()
   ```
 - 新しい巻から順に見て、まだ使っていない絵を選ぶ。
+- **その52以降は ky-img/ の別ファイルから取る。catalog.json を見て選び、使った所を足す**（2026-10-18〜。KY絵本は1巻5話・絵は tanpatsu-news の `ky-img/<巻>_<話>.jpg`＝ページに base64 は無い。取り方＝`git sparse-checkout set --no-cone /ky-img/catalog.json /ky-img/52_01.jpg`。号には今まで通り base64 で入れ、sha1 もその base64 で計算して used_images.txt へ。catalog.json の その行の `used` に `"週刊YYYYMMDD"` を足して tanpatsu-news へ push（push の前に pull）。その51までの絵も ky-img/ にあるので、どの巻もここから取ってよい）
 - **危ない場面（悪い手本）の絵は使わない**。KY絵本には「こうすると危ない」場面の絵が混じっている。お客さん向けの号に載ると、みどり造園が危ない作業をしているように見えるため、安全にできている場面・景色・道具の絵だけを選ぶ（まとんも挿絵ライブラリでそう選んでいた）。
 - 選んだ絵は、絵の中に文字が描かれていないかも見る（文字のある絵は避ける）。
 - 大きさの目安：KY絵本の挿絵は1枚およそ190〜320KB（base64）。4枚で約1MB＝1号はおよそ1.5MB以内に収まる。
