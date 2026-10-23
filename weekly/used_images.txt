@@ -23,3 +23,7 @@ bcfd80da41977ae28eec94db0b4868a809d4a23d	weekly/20261016.html	挿絵ライブラ
 e9ff7a620a539fd03ff319d87f8d83538945fdb3	weekly/20261016.html	挿絵ライブラリ
 c7c74aedd3e0a7e35ccb260da9f0c1f168ab5503	weekly/20261016.html	挿絵ライブラリ
 ae73665c5e7cf7d6dbe15cc8833cbaae28d99cf4	weekly/20261016.html	挿絵ライブラリ
+641bb0d71bfe00d13f3efeb70eddd54a7cd606d3	weekly/20261023.html	ky-img/53_03.jpg
+6a5217e260e486cdcf7eafddaef69e157bb6ece4	weekly/20261023.html	ky-img/53_02.jpg
+c4d3738f74259f62d8716658cf597ca250e55d62	weekly/20261023.html	ky-img/52_05.jpg
+283763ce7a65b64b54543619d824c0d39cda6fad	weekly/20261023.html	ky-img/54_02.jpg
