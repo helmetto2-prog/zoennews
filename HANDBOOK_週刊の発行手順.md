@@ -80,6 +80,7 @@
   📰 週刊 みどりの造園ニュース 第N号\n\nhttps://helmetto2-prog.github.io/zoennews/weekly/YYYYMMDD.html \n\n（今週のいちばんの話題を1行）
   ```
 - 3〜5行に収める。
+- **アドレスは字で貼らず、何が開くか分かる名前のボタンにする**（2026-11-07 義樹さん「案内もボタンにしてね」）。notify.yml（notify.js）が本文のアドレスを自動でボタンに変える。名前を決めたい時は `[週刊造園ニュース第N号を読む](https://…)` の形で書く（20字まで・「こちら」「リンク」「URL」「詳しく」だけの名前は使わない）。
 - 送ったら `https://api.github.com/repos/helmetto2-prog/fx-race-line/actions/workflows/notify.yml/runs?per_page=1` を60秒後→必要ならさらに120秒後に見て、conclusion が success でなければ「（再送）」を付けて1回だけ再送し、その結果も確かめる。
 - 見送り（§1）の時は送らない。
 
