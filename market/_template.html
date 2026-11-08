@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<!--
+  株とドル円デイリー情報 の「ひな形」。毎号これを写して {{ }} を埋める（デザインは変えない）。
+  書き方は ../HANDBOOK_株とドル円ニュース発行手順.md。{{ }} とこのコメントは、できあがりのページに残さない。
+-->
+<title>株とドル円デイリー情報 ｜ {{YYYY年M月D日（曜）}} 第{{N}}号</title>
+<style>
+ :root{
+ --ink:#1e2a2a;
+ --accent:#0f4c5c;
+ --accent-soft:#3d7d8f;
+ --cream:#edf3f4;
+ --paper:#ffffff;
+ --gold:#b8923c;
+ --up:#c0392b;
+ --down:#2471a3;
+ }
+ *{box-sizing:border-box;margin:0;padding:0;}
+ body{font-family:'メイリオ',Meiryo,'Hiragino Kaku Gothic ProN',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+ header{background:linear-gradient(135deg,#082f3a,#0f4c5c 55%,#3d7d8f);color:#fff;padding:30px 20px 26px;text-align:center;position:relative;overflow:hidden;}
+ header::after{content:"📈";position:absolute;right:16px;bottom:-6px;font-size:3.4rem;opacity:.18;}
+ header .kicker{font-size:.72rem;letter-spacing:.28em;opacity:.85;}
+ header h1{font-size:1.6rem;letter-spacing:.05em;margin:6px 0 4px;}
+ header p{font-size:.83rem;opacity:.92;}
+ .wrap{max-width:840px;margin:0 auto;padding:0;}
+ section{padding:26px 16px 10px;}
+ section.paper{background:var(--paper);}
+ section.cream{background:var(--cream);}
+ .badge{display:inline-block;background:var(--accent);color:#fff;font-size:.74rem;font-weight:bold;letter-spacing:.12em;padding:5px 14px;border-radius:4px 4px 4px 0;box-shadow:0 2px 5px rgba(15,76,92,.25);white-space:nowrap;}
+ .cat{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:8px 0 16px;}
+ .cat h2{font-size:1.12rem;color:var(--ink);font-weight:bold;}
+ .cat h2 em{color:var(--accent);font-style:normal;}
+ .cat small{color:#7d9599;font-size:.74rem;font-weight:normal;}
+ .item{position:relative;background:#fff;border:1px solid #d5e2e5;border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .cream .item{background:#fafdfd;}
+ .num{position:absolute;left:8px;top:2px;font-size:2.6rem;font-weight:900;color:var(--accent);opacity:.11;line-height:1;pointer-events:none;}
+ summary{cursor:pointer;padding:14px 44px 14px 54px;font-weight:bold;font-size:.98rem;list-style:none;position:relative;color:var(--ink);}
+ summary::-webkit-details-marker{display:none;}
+ summary::after{content:"＋";position:absolute;right:16px;top:13px;color:var(--accent-soft);font-weight:bold;font-size:1.1rem;}
+ details[open] summary::after{content:"－";}
+ summary:hover{background:#f0f7f8;}
+ .body{padding:6px 18px 18px 54px;font-size:.91rem;color:#39494c;border-top:1px dashed #dbe7e9;}
+ .body a{color:var(--accent);word-break:break-all;}
+ b{color:var(--accent);}
+ .memo{display:block;background:#eef5f6;border-left:4px solid var(--accent-soft);border-radius:0 6px 6px 0;padding:8px 12px;margin-top:12px;font-size:.86rem;color:#0f4c5c;}
+ .memo b{color:#082f3a;}
+ .tag{display:inline-block;background:#e5eff1;color:var(--accent);border:1px solid #a9c8cf;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-warn{display:inline-block;background:#fdeede;color:#c05a1a;border:1px solid #f0c496;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-gold{display:inline-block;background:#f7efd7;color:#8a6a12;border:1px solid var(--gold);border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .nums{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d5e2e5;font-size:.9rem;}
+ .nums th,.nums td{padding:9px 10px;border-bottom:1px solid #e3ecee;text-align:left;vertical-align:top;}
+ .nums th{background:#f0f7f8;color:var(--accent);font-size:.76rem;letter-spacing:.06em;font-weight:bold;}
+ .nums td.v{font-weight:bold;white-space:nowrap;}
+ .nums .up{color:var(--up);font-weight:bold;white-space:nowrap;}
+ .nums .down{color:var(--down);font-weight:bold;white-space:nowrap;}
+ .nums .flat{color:#7d9599;white-space:nowrap;}
+ .nums small{color:#7d9599;font-size:.72rem;font-weight:normal;}
+ .src{font-size:.74rem;color:#7d9599;margin:8px 2px 4px;}
+ .src a{color:var(--accent-soft);word-break:break-all;}
+ .chance{border:1px solid #d9e0c0;border-radius:10px;margin:6px 0 10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .chance .head{background:var(--accent);color:#fff;font-weight:bold;font-size:.86rem;letter-spacing:.06em;padding:8px 16px;}
+ .chance .in{background:#fffdf6;padding:12px 16px;font-size:.9rem;color:#4a4326;}
+ .chance .in b{color:#8a6a12;}
+ .yotei{list-style:none;background:#fff;border:1px solid #d5e2e5;border-radius:10px;padding:6px 14px;}
+ .yotei li{padding:8px 0;border-bottom:1px dashed #dbe7e9;font-size:.9rem;}
+ .yotei li:last-child{border-bottom:none;}
+ .yotei .t{display:inline-block;min-width:8.5em;color:var(--accent);font-weight:bold;}
+ .yotei .hot{color:#c05a1a;font-weight:bold;}
+ .pull{position:relative;max-width:680px;margin:22px 16px 4px;padding:18px 22px;border:1px solid #c3d8dc;border-left:5px solid var(--accent);border-radius:0 10px 10px 0;background:#fff;font-size:1rem;color:var(--ink);}
+ @media (min-width:720px){.pull{margin:22px auto 4px;}}
+ .pull small{display:block;text-align:right;margin-top:8px;color:#7d9599;font-size:.78rem;font-weight:normal;}
+ footer{background:#082f3a;color:#d3e2e6;text-align:center;font-size:.76rem;padding:20px 16px 26px;margin-top:14px;}
+ footer .brand{font-weight:bold;letter-spacing:.14em;color:#fff;font-size:.9rem;margin-bottom:4px;}
+ .bn{text-align:center;padding:16px;background:#edf3f4;}
+ .bn a{color:#0f4c5c;font-weight:bold;text-decoration:none;border:1px solid #a9c8cf;background:#e5eff1;border-radius:6px;padding:8px 18px;display:inline-block;}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">MARKET DAILY ｜ 株式・ドル円</div>
+ <h1>📈 株とドル円デイリー情報</h1>
+ <p>{{YYYY年M月D日（曜）}} ｜ 第{{N}}号{{（週末版）※土日だけ}} ｜ 株式市場の全体とドル円の重要ニュース</p>
+</header>
+<div class="wrap">
+
+<!-- ① けさの数字：表の行はこの7つ。値の確かめられない行は「確認中」と書き、作った数字は入れない -->
+<section class="paper">
+<div class="cat"><span class="badge">けさの数字</span><h2>{{きのうの相場をひとことで}}</h2><small>{{M/D H:MM 時点}}</small></div>
+<table class="nums">
+<tr><th>指標</th><th>値</th><th>前日比</th></tr>
+<tr><td>日経平均<br><small>{{M/D 終値}}</small></td><td class="v">{{00,000.00}}</td><td class="{{up|down|flat}}">{{+000.00（+0.00%）}}</td></tr>
+<tr><td>TOPIX<br><small>{{M/D 終値}}</small></td><td class="v">{{0,000.00}}</td><td class="{{up|down|flat}}">{{+00.00（+0.00%）}}</td></tr>
+<tr><td>NYダウ<br><small>{{M/D 終値・米国時間}}</small></td><td class="v">{{00,000.00}}</td><td class="{{up|down|flat}}">{{+000.00（+0.00%）}}</td></tr>
+<tr><td>S&amp;P500<br><small>{{M/D 終値・米国時間}}</small></td><td class="v">{{0,000.00}}</td><td class="{{up|down|flat}}">{{+00.00（+0.00%）}}</td></tr>
+<tr><td>ナスダック総合<br><small>{{M/D 終値・米国時間}}</small></td><td class="v">{{00,000.00}}</td><td class="{{up|down|flat}}">{{+000.00（+0.00%）}}</td></tr>
+<tr><td>ドル円<br><small>{{M/D H:MM 時点}}</small></td><td class="v">{{000.00円}}</td><td class="{{up|down|flat}}">{{+0.00円（前日の同じころ比）}}</td></tr>
+<tr><td>米10年債利回り<br><small>{{M/D 終値・米国時間}}</small></td><td class="v">{{0.000%}}</td><td class="{{up|down|flat}}">{{+0.000}}</td></tr>
+</table>
+<p class="src">出典：<a href="{{URL}}" target="_blank" rel="noopener">{{媒体名「記事名」}}</a> ／ <a href="{{URL}}" target="_blank" rel="noopener">{{媒体名「記事名」}}</a></p>
+</section>
+
+<!-- ② 株式全体：2〜3本。日本株・米国株の全体を動かした材料。個別の会社は相場全体を動かした時だけ -->
+<section class="cream">
+<div class="cat"><span class="badge">株式全体</span><h2>{{見出し}}</h2><small>日本株・米国株の大きな流れ</small></div>
+
+<div class="item"><div class="num">1</div>
+<details open>
+<summary>{{記事の見出し（1行）}}<span class="tag">{{日本株|米国株|金利|決算|政策}}</span></summary>
+<div class="body">{{本文 3〜6行。大事な数字は <b>太字</b>。何が起きて、なぜ相場が動いたか}}
+<div class="memo">📈 <b>メモ</b>：{{読み方のコツを一般論で1〜2行（売買のすすめは書かない）}}</div><br>
+<a href="{{URL}}" target="_blank" rel="noopener">出典: {{媒体名「記事名」}}</a>
+</div>
+</details>
+</div>
+
+<!-- 2本目・3本目も同じ形（num を 2・3 に。details の open は1本目だけ） -->
+</section>
+
+<!-- ③ ドル円：2〜3本＋最後に材料の整理の箱 -->
+<section class="paper">
+<div class="cat"><span class="badge">ドル円</span><h2>{{見出し}}</h2><small>円とドルを動かす材料</small></div>
+
+<div class="item"><div class="num">{{4}}</div>
+<details>
+<summary>{{記事の見出し（1行）}}<span class="tag">{{値動き|日銀|FRB|指標|介入|要人発言}}</span></summary>
+<div class="body">{{本文 3〜6行}}
+<div class="memo">💱 <b>メモ</b>：{{読み方のコツを一般論で1〜2行}}</div><br>
+<a href="{{URL}}" target="_blank" rel="noopener">出典: {{媒体名「記事名」}}</a>
+</div>
+</details>
+</div>
+
+<div class="chance">
+<div class="head">💡 円側の事情とドル側の事情</div>
+<div class="in">{{いま円高の方向に働いている材料と、円安の方向に働いている材料を、それぞれ1〜2行で。予想や売買のすすめは書かない}}</div>
+</div>
+</section>
+
+<!-- ④ きょうと今週の予定：日本時間。大事な物は class="hot" -->
+<section class="cream">
+<div class="cat"><span class="badge">きょうと今週の予定</span><h2>{{見出し}}</h2><small>時刻は日本時間</small></div>
+<ul class="yotei">
+<li><span class="t">{{M/D（曜）H:MM}}</span>{{イベント}}</li>
+<li><span class="t">{{M/D（曜）H:MM}}</span><span class="hot">{{特に大事なイベント}}</span></li>
+</ul>
+<p class="src">出典：<a href="{{URL}}" target="_blank" rel="noopener">{{媒体名「記事名」}}</a></p>
+</section>
+
+<!-- ⑤ ひとこと用語：通し番号。バックナンバーと同じ言葉は使わない -->
+<section class="paper">
+<div class="cat"><span class="badge">ひとこと用語</span><h2>連載{{n}} <em>{{用語}}</em></h2><small>株と為替の基礎を1日1つ</small></div>
+<div class="item"><div class="num">{{n}}</div>
+<details>
+<summary>{{用語の意味を1行で}}<span class="tag-gold">用語</span></summary>
+<div class="body">{{3〜5行。たとえ話を1つ入れて、やさしく}}</div>
+</details>
+</div>
+</section>
+
+<div class="pull">
+{{締めの一言（1〜2行。相場の予想や売買のすすめは書かない）}}
+<small>— 株とドル円デイリー情報</small>
+</div>
+
+<footer>
+<div class="brand">📈 株とドル円デイリー情報</div>
+※公開されているWebの情報を自動で集めて要約したものです。特定の売買をすすめるものではありません。<br>
+数値は出典の時点のもので、遅れや誤りがあることがあります。投資の判断はご自身でお願いします。<br>
+FXはレバレッジにより大きな損失が出るおそれがあります。<br>
+生成: {{YYYY-MM-DD}}
+</footer>
+</div>
+<div class="bn"><a href="backnumber/">📚 バックナンバー一覧（全{{N}}号）</a></div>
+</body>
+</html>
