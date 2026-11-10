@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>株とドル円デイリー情報 ｜ 2026年11月11日（水） 第4号</title>
+<style>
+ :root{
+ --ink:#1e2a2a;
+ --accent:#0f4c5c;
+ --accent-soft:#3d7d8f;
+ --cream:#edf3f4;
+ --paper:#ffffff;
+ --gold:#b8923c;
+ --up:#c0392b;
+ --down:#2471a3;
+ }
+ *{box-sizing:border-box;margin:0;padding:0;}
+ body{font-family:'メイリオ',Meiryo,'Hiragino Kaku Gothic ProN',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+ header{background:linear-gradient(135deg,#082f3a,#0f4c5c 55%,#3d7d8f);color:#fff;padding:30px 20px 26px;text-align:center;position:relative;overflow:hidden;}
+ header::after{content:"📈";position:absolute;right:16px;bottom:-6px;font-size:3.4rem;opacity:.18;}
+ header .kicker{font-size:.72rem;letter-spacing:.28em;opacity:.85;}
+ header h1{font-size:1.6rem;letter-spacing:.05em;margin:6px 0 4px;}
+ header p{font-size:.83rem;opacity:.92;}
+ .wrap{max-width:840px;margin:0 auto;padding:0;}
+ section{padding:26px 16px 10px;}
+ section.paper{background:var(--paper);}
+ section.cream{background:var(--cream);}
+ .badge{display:inline-block;background:var(--accent);color:#fff;font-size:.74rem;font-weight:bold;letter-spacing:.12em;padding:5px 14px;border-radius:4px 4px 4px 0;box-shadow:0 2px 5px rgba(15,76,92,.25);white-space:nowrap;}
+ .cat{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:8px 0 16px;}
+ .cat h2{font-size:1.12rem;color:var(--ink);font-weight:bold;}
+ .cat h2 em{color:var(--accent);font-style:normal;}
+ .cat small{color:#7d9599;font-size:.74rem;font-weight:normal;}
+ .item{position:relative;background:#fff;border:1px solid #d5e2e5;border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .cream .item{background:#fafdfd;}
+ .num{position:absolute;left:8px;top:2px;font-size:2.6rem;font-weight:900;color:var(--accent);opacity:.11;line-height:1;pointer-events:none;}
+ summary{cursor:pointer;padding:14px 44px 14px 54px;font-weight:bold;font-size:.98rem;list-style:none;position:relative;color:var(--ink);}
+ summary::-webkit-details-marker{display:none;}
+ summary::after{content:"＋";position:absolute;right:16px;top:13px;color:var(--accent-soft);font-weight:bold;font-size:1.1rem;}
+ details[open] summary::after{content:"－";}
+ summary:hover{background:#f0f7f8;}
+ .body{padding:6px 18px 18px 54px;font-size:.91rem;color:#39494c;border-top:1px dashed #dbe7e9;}
+ .body a{color:var(--accent);word-break:break-all;}
+ b{color:var(--accent);}
+ .memo{display:block;background:#eef5f6;border-left:4px solid var(--accent-soft);border-radius:0 6px 6px 0;padding:8px 12px;margin-top:12px;font-size:.86rem;color:#0f4c5c;}
+ .memo b{color:#082f3a;}
+ .tag{display:inline-block;background:#e5eff1;color:var(--accent);border:1px solid #a9c8cf;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-warn{display:inline-block;background:#fdeede;color:#c05a1a;border:1px solid #f0c496;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-gold{display:inline-block;background:#f7efd7;color:#8a6a12;border:1px solid var(--gold);border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .nums{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d5e2e5;font-size:.9rem;}
+ .nums th,.nums td{padding:9px 10px;border-bottom:1px solid #e3ecee;text-align:left;vertical-align:top;}
+ .nums th{background:#f0f7f8;color:var(--accent);font-size:.76rem;letter-spacing:.06em;font-weight:bold;}
+ .nums td.v{font-weight:bold;white-space:nowrap;}
+ .nums .up{color:var(--up);font-weight:bold;white-space:nowrap;}
+ .nums .down{color:var(--down);font-weight:bold;white-space:nowrap;}
+ .nums .flat{color:#7d9599;white-space:nowrap;}
+ .nums small{color:#7d9599;font-size:.72rem;font-weight:normal;}
+ .src{font-size:.74rem;color:#7d9599;margin:8px 2px 4px;}
+ .src a{color:var(--accent-soft);word-break:break-all;}
+ .chance{border:1px solid #d9e0c0;border-radius:10px;margin:6px 0 10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .chance .head{background:var(--accent);color:#fff;font-weight:bold;font-size:.86rem;letter-spacing:.06em;padding:8px 16px;}
+ .chance .in{background:#fffdf6;padding:12px 16px;font-size:.9rem;color:#4a4326;}
+ .chance .in b{color:#8a6a12;}
+ .yotei{list-style:none;background:#fff;border:1px solid #d5e2e5;border-radius:10px;padding:6px 14px;}
+ .yotei li{padding:8px 0;border-bottom:1px dashed #dbe7e9;font-size:.9rem;}
+ .yotei li:last-child{border-bottom:none;}
+ .yotei .t{display:inline-block;min-width:8.5em;color:var(--accent);font-weight:bold;}
+ .yotei .hot{color:#c05a1a;font-weight:bold;}
+ .pull{position:relative;max-width:680px;margin:22px 16px 4px;padding:18px 22px;border:1px solid #c3d8dc;border-left:5px solid var(--accent);border-radius:0 10px 10px 0;background:#fff;font-size:1rem;color:var(--ink);}
+ @media (min-width:720px){.pull{margin:22px auto 4px;}}
+ .pull small{display:block;text-align:right;margin-top:8px;color:#7d9599;font-size:.78rem;font-weight:normal;}
+ footer{background:#082f3a;color:#d3e2e6;text-align:center;font-size:.76rem;padding:20px 16px 26px;margin-top:14px;}
+ footer .brand{font-weight:bold;letter-spacing:.14em;color:#fff;font-size:.9rem;margin-bottom:4px;}
+ .bn{text-align:center;padding:16px;background:#edf3f4;}
+ .bn a{color:#0f4c5c;font-weight:bold;text-decoration:none;border:1px solid #a9c8cf;background:#e5eff1;border-radius:6px;padding:8px 18px;display:inline-block;}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">MARKET DAILY ｜ 株式・ドル円</div>
+ <h1>📈 株とドル円デイリー情報</h1>
+ <p>2026年11月11日（水） ｜ 第4号 ｜ 株式市場の全体とドル円の重要ニュース</p>
+</header>
+<div class="wrap">
+
+<section class="paper">
+<div class="cat"><span class="badge">けさの数字</span><h2>日経平均は6万円回復、米国株はCPI上振れで反落</h2><small>11/11 6:20 時点で確認できた最新の値</small></div>
+<table class="nums">
+<tr><th>指標</th><th>値</th><th>前日比</th></tr>
+<tr><td>日経平均<br><small>11/10（火）終値</small></td><td class="v">60,459.58</td><td class="up">+1,684.08（+2.87%）</td></tr>
+<tr><td>TOPIX<br><small>11/10（火）終値</small></td><td class="v">3,893.71</td><td class="up">+75.55（+1.98%）</td></tr>
+<tr><td>NYダウ<br><small>11/10（火）終値・米国時間</small></td><td class="v">52,231.89</td><td class="down">−157.86（−0.30%）</td></tr>
+<tr><td>S&amp;P500<br><small>11/10（火）終値・米国時間</small></td><td class="v">7,520.93</td><td class="down">−29.01（−0.38%）</td></tr>
+<tr><td>ナスダック総合<br><small>11/10（火）終値・米国時間</small></td><td class="v">25,065.88</td><td class="down">−187.26（−0.74%）</td></tr>
+<tr><td>ドル円<br><small>11/11 6:00 時点<br>（共同通信 158円81〜82銭）</small></td><td class="v">158.81円前後</td><td class="up">+0.9円前後<br><small>前日6時（157円89〜91銭）比。円安・ドル高</small></td></tr>
+<tr><td>米10年債利回り<br><small>11/10（火）終値・米国時間</small></td><td class="v">4.98%前後</td><td class="up">+0.12前後<br><small>出典により4.983〜4.988%</small></td></tr>
+</table>
+<p class="src">出典：<a href="https://www.zaikei.co.jp/article/20261110/876899.html" target="_blank" rel="noopener">財経新聞（フィスコ）「日経平均大引け：前日比1684.08円高の60459.58円」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/mn_1043202_202611101753/" target="_blank" rel="noopener">OANDA証券「日経平均サマリー（10日）」</a> ／ <a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html" target="_blank" rel="noopener">Yahoo Finance「Stock market today: Tuesday, November 10」</a> ／ <a href="https://www.kiplinger.com/investing/stocks/stocks-drop-as-rate-hike-worries-rise-stock-market-today" target="_blank" rel="noopener">Kiplinger「Stocks Drop as Rate-Hike Worries Rise」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/kn_2026111102000005/" target="_blank" rel="noopener">共同通信（OANDA掲載）「為替相場 11日（日本時間6時）」</a> ／ <a href="https://zaikei.co.jp/article/20261111/876967.html" target="_blank" rel="noopener">財経新聞（フィスコ）「11月10日のNY為替概況」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">株式全体</span><h2>東京は続伸、ニューヨークは<em>「利上げの心配」</em>で一服</h2><small>日本株・米国株の大きな流れ</small></div>
+
+<div class="item"><div class="num">1</div>
+<details open>
+<summary>日経平均は1,684円高、終値で3日ぶりに6万円台を回復<span class="tag">日本株</span></summary>
+<div class="body">10日（火）の東京市場で日経平均は<b>1,684円08銭高の60,459円58銭</b>と続伸し、終値で3営業日ぶりに6万円台を取り戻しました。2日続けて2%を超える上昇です。前の日の米国でナスダックと半導体株の指数が大きく上がった流れを受け、AI・半導体関連株が相場を引っぱりました。米国とイランの交渉への期待から原油が下がり、インフレへの警戒がやわらいだことも支えになりました。東証プライムでは<b>約78%の銘柄が値上がり</b>し、売買代金は<b>9兆1,555億円</b>と大きく膨らんでいます。
+<div class="memo">📈 <b>メモ</b>：6万円のような切りのいい数字は、多くの人が意識する「節目」です。節目の上で終われたかどうかは、相場の雰囲気を見る目安としてよく話題になります。</div><br>
+<a href="https://www.zaikei.co.jp/article/20261110/876913.html" target="_blank" rel="noopener">出典: 財経新聞（フィスコ）「日経平均は大幅続伸、米半導体株高を追い風に6万円台回復」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/mn_1043202_202611101753/" target="_blank" rel="noopener">OANDA証券「日経平均サマリー（10日）」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">2</div>
+<details>
+<summary>米国株は反落、10月のCPIが予想を上回り「利上げ」の見方が強まる<span class="tag">米国株</span></summary>
+<div class="body">10日のニューヨーク市場は3指数そろって下がり、ナスダック総合は<b>0.74%安</b>でした。10月の消費者物価指数（CPI）は<b>前月比+0.4%</b>（予想+0.3%）、食品とエネルギーを除くコアも<b>+0.3%</b>（予想+0.2%）と、どちらも予想を上回りました。FRBのウォラー理事が12月の会合で<b>0.5%の利上げも検討すべき</b>との考えを示し、金利が上がったことでハイテク株が売られました。AI半導体の最大手エヌビディアは、CEOをめぐる取締役会の調査が引き続き嫌われて<b>5.5%</b>下げ、10月初めからの下落は30%近くになっています。
+<div class="memo">📈 <b>メモ</b>：金利が上がると、将来の利益への期待で買われているハイテク株は、割高に見えて売られやすいと言われます。同じ日に日米の株が逆向きに動くこともあります。</div><br>
+<a href="https://www.kiplinger.com/investing/stocks/stocks-drop-as-rate-hike-worries-rise-stock-market-today" target="_blank" rel="noopener">出典: Kiplinger「Stocks Drop as Rate-Hike Worries Rise」</a> ／ <a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html" target="_blank" rel="noopener">Yahoo Finance「Dow, S&amp;P 500, Nasdaq slip as hot CPI fuels rate hike odds」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">3</div>
+<details>
+<summary>米国の長期金利は5%近くへ、10年債の入札も「需要が弱め」<span class="tag">金利</span></summary>
+<div class="body">CPIのあと米国の国債は売られ、10年債利回りは<b>0.12%ほど上がって4.98%前後</b>と、10月下旬以来の高さになりました。金融政策の見通しを映しやすい2年債利回りは<b>約0.19%</b>上がっています。同じ日に行われた10年債の入札（420億ドル）は、応札倍率が<b>2.46倍</b>と過去6回の平均（2.60倍）を下回り、需要は低調と受け止められました。なお、11日（水）の米国はベテランズデーで債券市場が休みです。
+<div class="memo">📈 <b>メモ</b>：国債の入札で買い手が少ないと、利回りが上がりやすくなります。長期金利は住宅ローンや企業の借り入れのコストにつながるため、株と為替の両方に影響します。</div><br>
+<a href="https://zaikei.co.jp/article/20261111/876965.html" target="_blank" rel="noopener">出典: 財経新聞（フィスコ）「NY外為：ドル続伸、対円で158円台後半、米10年債入札は需要低調」</a> ／ <a href="https://www.kiplinger.com/investing/stocks/stocks-drop-as-rate-hike-worries-rise-stock-market-today" target="_blank" rel="noopener">Kiplinger「Stocks Drop as Rate-Hike Worries Rise」</a>
+</div>
+</details>
+</div>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ドル円</span><h2>米利上げ観測で<em>158円台後半</em>へ戻す</h2><small>円とドルを動かす材料</small></div>
+
+<div class="item"><div class="num">4</div>
+<details>
+<summary>ドル円は158円85銭まで上昇、10月14日以来の円安・ドル高<span class="tag">FRB</span></summary>
+<div class="body">10日のニューヨーク市場でドル円は<b>158円14銭から158円85銭</b>まで上がり、10月14日以来の円安・ドル高の水準を付けました。予想を上回るCPIに加え、ウォラー理事とローガン・ダラス連銀総裁がそろって利上げの必要性に触れ、米国の金利とともにドルが買われました。ロイターによると、12月（8〜9日）の会合での<b>0.5%の利上げ</b>の確率は、市場で<b>1割前後</b>まで意識されています。けさ6時は<b>158円81〜82銭</b>（共同通信）です。
+<div class="memo">💱 <b>メモ</b>：日米の金利の差が広がる、と市場が考えると、金利の高いドルが買われやすくなります。要人の発言ひとつで、この「差の見通し」が動くことがあります。</div><br>
+<a href="https://zaikei.co.jp/article/20261111/876967.html" target="_blank" rel="noopener">出典: 財経新聞（フィスコ）「11月10日のNY為替概況」</a> ／ <a href="https://www.investing.com/news/economy-news/investors-boost-odds-of-halfpoint-fed-hike-as-core-cpi-rise-meets-wallers-bar-5016055" target="_blank" rel="noopener">ロイター（Investing.com掲載）「Fed officials open door to a half-point hike」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/kn_2026111102000005/" target="_blank" rel="noopener">共同通信（OANDA掲載）「為替相場 11日」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">5</div>
+<details>
+<summary>日銀「主な意見」は早めの利上げを促す声が目立つ、相場の反応は小さく<span class="tag">日銀</span></summary>
+<div class="body">日銀は10日朝、10月の金融政策決定会合の「主な意見」を公表しました。政策金利は<b>1.25%</b>で据え置かれましたが、次の利上げを「できるときに」行うべきだという意見など、<b>早めの利上げを促す声</b>が目立ちました。一方で、利上げが景気を冷やすリスクに注意を求める慎重な意見もありました。利上げの提案などは会合の当日に分かっていたため、公表後のドル円は<b>15銭ほど</b>の動きにとどまりました。次の会合は<b>12月17・18日</b>です。
+<div class="memo">💱 <b>メモ</b>：「主な意見」は、会合で出た意見を名前を伏せて並べたものです。どちらの意見が多いかで、次の一手の方向を読む手がかりになります。</div><br>
+<a href="https://www.oanda.jp/lab-education/market_news/20261110_boj_opinions_oct/" target="_blank" rel="noopener">出典: OANDA証券「日銀『主な意見』10月会合｜12月利上げの手がかりを図解」</a> ／ <a href="https://news.web.nhk/newsweb/na/nd-20261110de73547" target="_blank" rel="noopener">NHK「日銀10月会合 物価2％到達『できるときに利上げ』の指摘も」</a>
+</div>
+</details>
+</div>
+
+<div class="chance">
+<div class="head">💡 円側の事情とドル側の事情</div>
+<div class="in"><b>円高の方向の材料</b>：日銀の中で早めの利上げを促す声が多いこと。7〜8月に過去最大の円買い介入があったばかりで、当局への警戒も意識されています。<br><b>円安の方向の材料</b>：米CPIの上振れとFRB高官の発言で、12月の米利上げ（0.5%の可能性も含む）の見方が強まり、米国の金利が上がっています。</div>
+</div>
+<p class="src">出典：<a href="https://www.investing.com/news/economy-news/investors-boost-odds-of-halfpoint-fed-hike-as-core-cpi-rise-meets-wallers-bar-5016055" target="_blank" rel="noopener">ロイター（Investing.com掲載）「Fed officials open door to a half-point hike」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/20261110_boj_opinions_oct/" target="_blank" rel="noopener">OANDA証券「日銀『主な意見』10月会合」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">きょうと今週の予定</span><h2>次は<em>13日の米PPI</em>、きょうは米債券市場がお休み</h2><small>時刻は日本時間</small></div>
+<ul class="yotei">
+<li><span class="t">11/11（水）</span>米国はベテランズデーで<b>債券市場が休場</b>（株式は通常どおり）／国内決算：リクルートHDほか</li>
+<li><span class="t">11/12（木）8:50</span>国内企業物価指数（10月）（予想：前年比+6.5%）</li>
+<li><span class="t">11/12（木）10:30</span><span class="hot">浅田日銀審議委員のあいさつ</span>（記者会見も予定）</li>
+<li><span class="t">11/12（木）</span>英国 7〜9月期GDP（16:00）／米国 新規失業保険申請件数（22:30）／アプライド・マテリアルズの決算（米国時間）</li>
+<li><span class="t">11/13（金）22:30</span><span class="hot">米国 10月の生産者物価指数（PPI）</span></li>
+<li><span class="t">11/13（金）</span>国内決算：メガバンク各社ほか</li>
+<li><span class="t">その先</span>FOMC 12月8〜9日（米国時間）／日銀会合 12月17・18日</li>
+</ul>
+<p class="src">出典：<a href="https://www.zaikei.co.jp/article/20261107/876527.html" target="_blank" rel="noopener">財経新聞「国内外の注目経済指標」</a> ／ <a href="https://zai.diamond.jp/articles/-/498657" target="_blank" rel="noopener">ザイFX！「【11月9日～の週】為替相場の注目材料スケジュールと焦点」</a> ／ <a href="https://gaitame.com/media/entry/2026/11/09/205512" target="_blank" rel="noopener">外為どっとコム「NY株見通し－今週は10月CPIなどのインフレ指標や主要企業の決算発表に注目」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/20261110_boj_opinions_oct/" target="_blank" rel="noopener">OANDA証券「日銀『主な意見』10月会合」</a></p>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ひとこと用語</span><h2>連載4 <em>中立金利（ちゅうりつきんり）</em></h2><small>株と為替の基礎を1日1つ</small></div>
+<div class="item"><div class="num">4</div>
+<details>
+<summary>景気を温めも冷やしもしない、ちょうどよい金利の水準<span class="tag-gold">用語</span></summary>
+<div class="body">政策金利がこれより低いと景気を温める方向に、高いと冷やす方向に働くとされる「目安の金利」です。お風呂でいえば、熱くもぬるくもない「ちょうどよい湯加減」のようなものです。ただし直接は見えないので、推計には幅があります。日銀の「主な意見」でも、中立金利がどこにあるか、そこまでどの速さで上げるかが議論になっています。</div>
+</details>
+</div>
+</section>
+
+<div class="pull">
+東京は6万円を取り戻し、ニューヨークは金利の上昇で一服と、日米で表情が分かれた一日でした。13日の米PPIまで、金利の動きに注目です。
+<small>— 株とドル円デイリー情報</small>
+</div>
+
+<footer>
+<div class="brand">📈 株とドル円デイリー情報</div>
+※公開されているWebの情報を自動で集めて要約したものです。特定の売買をすすめるものではありません。<br>
+数値は出典の時点のもので、遅れや誤りがあることがあります。投資の判断はご自身でお願いします。<br>
+FXはレバレッジにより大きな損失が出るおそれがあります。<br>
+生成: 2026-11-11
+</footer>
+</div>
+<div class="bn"><a href="./">📚 バックナンバー一覧へ戻る</a></div>
+</body>
+</html>
