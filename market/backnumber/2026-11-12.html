@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>株とドル円デイリー情報 ｜ 2026年11月12日（木） 第5号</title>
+<style>
+ :root{
+ --ink:#1e2a2a;
+ --accent:#0f4c5c;
+ --accent-soft:#3d7d8f;
+ --cream:#edf3f4;
+ --paper:#ffffff;
+ --gold:#b8923c;
+ --up:#c0392b;
+ --down:#2471a3;
+ }
+ *{box-sizing:border-box;margin:0;padding:0;}
+ body{font-family:'メイリオ',Meiryo,'Hiragino Kaku Gothic ProN',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+ header{background:linear-gradient(135deg,#082f3a,#0f4c5c 55%,#3d7d8f);color:#fff;padding:30px 20px 26px;text-align:center;position:relative;overflow:hidden;}
+ header::after{content:"📈";position:absolute;right:16px;bottom:-6px;font-size:3.4rem;opacity:.18;}
+ header .kicker{font-size:.72rem;letter-spacing:.28em;opacity:.85;}
+ header h1{font-size:1.6rem;letter-spacing:.05em;margin:6px 0 4px;}
+ header p{font-size:.83rem;opacity:.92;}
+ .wrap{max-width:840px;margin:0 auto;padding:0;}
+ section{padding:26px 16px 10px;}
+ section.paper{background:var(--paper);}
+ section.cream{background:var(--cream);}
+ .badge{display:inline-block;background:var(--accent);color:#fff;font-size:.74rem;font-weight:bold;letter-spacing:.12em;padding:5px 14px;border-radius:4px 4px 4px 0;box-shadow:0 2px 5px rgba(15,76,92,.25);white-space:nowrap;}
+ .cat{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:8px 0 16px;}
+ .cat h2{font-size:1.12rem;color:var(--ink);font-weight:bold;}
+ .cat h2 em{color:var(--accent);font-style:normal;}
+ .cat small{color:#7d9599;font-size:.74rem;font-weight:normal;}
+ .item{position:relative;background:#fff;border:1px solid #d5e2e5;border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .cream .item{background:#fafdfd;}
+ .num{position:absolute;left:8px;top:2px;font-size:2.6rem;font-weight:900;color:var(--accent);opacity:.11;line-height:1;pointer-events:none;}
+ summary{cursor:pointer;padding:14px 44px 14px 54px;font-weight:bold;font-size:.98rem;list-style:none;position:relative;color:var(--ink);}
+ summary::-webkit-details-marker{display:none;}
+ summary::after{content:"＋";position:absolute;right:16px;top:13px;color:var(--accent-soft);font-weight:bold;font-size:1.1rem;}
+ details[open] summary::after{content:"－";}
+ summary:hover{background:#f0f7f8;}
+ .body{padding:6px 18px 18px 54px;font-size:.91rem;color:#39494c;border-top:1px dashed #dbe7e9;}
+ .body a{color:var(--accent);word-break:break-all;}
+ b{color:var(--accent);}
+ .memo{display:block;background:#eef5f6;border-left:4px solid var(--accent-soft);border-radius:0 6px 6px 0;padding:8px 12px;margin-top:12px;font-size:.86rem;color:#0f4c5c;}
+ .memo b{color:#082f3a;}
+ .tag{display:inline-block;background:#e5eff1;color:var(--accent);border:1px solid #a9c8cf;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-warn{display:inline-block;background:#fdeede;color:#c05a1a;border:1px solid #f0c496;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-gold{display:inline-block;background:#f7efd7;color:#8a6a12;border:1px solid var(--gold);border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .nums{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d5e2e5;font-size:.9rem;}
+ .nums th,.nums td{padding:9px 10px;border-bottom:1px solid #e3ecee;text-align:left;vertical-align:top;}
+ .nums th{background:#f0f7f8;color:var(--accent);font-size:.76rem;letter-spacing:.06em;font-weight:bold;}
+ .nums td.v{font-weight:bold;white-space:nowrap;}
+ .nums .up{color:var(--up);font-weight:bold;white-space:nowrap;}
+ .nums .down{color:var(--down);font-weight:bold;white-space:nowrap;}
+ .nums .flat{color:#7d9599;white-space:nowrap;}
+ .nums small{color:#7d9599;font-size:.72rem;font-weight:normal;}
+ .src{font-size:.74rem;color:#7d9599;margin:8px 2px 4px;}
+ .src a{color:var(--accent-soft);word-break:break-all;}
+ .chance{border:1px solid #d9e0c0;border-radius:10px;margin:6px 0 10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .chance .head{background:var(--accent);color:#fff;font-weight:bold;font-size:.86rem;letter-spacing:.06em;padding:8px 16px;}
+ .chance .in{background:#fffdf6;padding:12px 16px;font-size:.9rem;color:#4a4326;}
+ .chance .in b{color:#8a6a12;}
+ .yotei{list-style:none;background:#fff;border:1px solid #d5e2e5;border-radius:10px;padding:6px 14px;}
+ .yotei li{padding:8px 0;border-bottom:1px dashed #dbe7e9;font-size:.9rem;}
+ .yotei li:last-child{border-bottom:none;}
+ .yotei .t{display:inline-block;min-width:8.5em;color:var(--accent);font-weight:bold;}
+ .yotei .hot{color:#c05a1a;font-weight:bold;}
+ .pull{position:relative;max-width:680px;margin:22px 16px 4px;padding:18px 22px;border:1px solid #c3d8dc;border-left:5px solid var(--accent);border-radius:0 10px 10px 0;background:#fff;font-size:1rem;color:var(--ink);}
+ @media (min-width:720px){.pull{margin:22px auto 4px;}}
+ .pull small{display:block;text-align:right;margin-top:8px;color:#7d9599;font-size:.78rem;font-weight:normal;}
+ footer{background:#082f3a;color:#d3e2e6;text-align:center;font-size:.76rem;padding:20px 16px 26px;margin-top:14px;}
+ footer .brand{font-weight:bold;letter-spacing:.14em;color:#fff;font-size:.9rem;margin-bottom:4px;}
+ .bn{text-align:center;padding:16px;background:#edf3f4;}
+ .bn a{color:#0f4c5c;font-weight:bold;text-decoration:none;border:1px solid #a9c8cf;background:#e5eff1;border-radius:6px;padding:8px 18px;display:inline-block;}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">MARKET DAILY ｜ 株式・ドル円</div>
+ <h1>📈 株とドル円デイリー情報</h1>
+ <p>2026年11月12日（木） ｜ 第5号 ｜ 株式市場の全体とドル円の重要ニュース</p>
+</header>
+<div class="wrap">
+
+<section class="paper">
+<div class="cat"><span class="badge">けさの数字</span><h2>日米そろって上昇、ドル円は<em>160円目前</em></h2><small>11/12 6:20 時点で確認できた最新の値</small></div>
+<table class="nums">
+<tr><th>指標</th><th>値</th><th>前日比</th></tr>
+<tr><td>日経平均<br><small>11/11（水）終値</small></td><td class="v">61,248.59</td><td class="up">+789.01（+1.31%）</td></tr>
+<tr><td>TOPIX<br><small>11/11（水）終値</small></td><td class="v">3,929.39</td><td class="up">+35.68（+0.92%）</td></tr>
+<tr><td>NYダウ<br><small>11/11（水）終値・米国時間</small></td><td class="v">52,486前後</td><td class="up">+254前後（+0.49%）</td></tr>
+<tr><td>S&amp;P500<br><small>11/11（水）終値・米国時間</small></td><td class="v">7,619前後</td><td class="up">+98前後（+1.3%）</td></tr>
+<tr><td>ナスダック総合<br><small>11/11（水）終値・米国時間</small></td><td class="v">25,466前後</td><td class="up">+400前後（+1.60%）</td></tr>
+<tr><td>ドル円<br><small>11/12 4:00 時点<br>（ザイFX! 159.87円。共同通信の3時は159円85〜86銭）</small></td><td class="v">159.87円前後</td><td class="up">+1.0円前後<br><small>前日6時（158円81〜82銭）比。円安・ドル高</small></td></tr>
+<tr><td>米10年債利回り<br><small>11/10（火）終値・米国時間<br>11/11は債券市場が休場</small></td><td class="v">4.98%前後</td><td class="flat">休場<br><small>11日はベテランズデーで取引なし</small></td></tr>
+</table>
+<p class="src">※米国3指数は、けさの時点で確認できた終値の概数と騰落率（Kiplinger と TipRanks で一致）。<br>出典：<a href="https://www.zaikei.co.jp/article/20261111/877096.html" target="_blank" rel="noopener">財経新聞（フィスコ）「日経平均大引け：前日比789.01円高の61248.59円」</a> ／ <a href="https://oanda.jp/lab-education/market_news/mn_1043427_202611111751" target="_blank" rel="noopener">OANDA証券「日経平均サマリー（11日）」</a> ／ <a href="https://finance.yahoo.co.jp/news/detail/e485913e90c1b6d338b6586763da6b17494d49f9" target="_blank" rel="noopener">ウエルスアドバイザー（Yahoo!ファイナンス掲載）「日経平均は３日続伸で６万１０００円台＝１１日大引け」</a> ／ <a href="https://www.kiplinger.com/investing/stocks/nasdaq-adds-400-points-after-coreweave-earnings-stock-market-today" target="_blank" rel="noopener">Kiplinger「Nasdaq Adds 400 Points as CoreWeave Earnings Revive the AI Trade」</a> ／ <a href="https://www.tipranks.com/news/market-wrap-stocks-close-higher-as-ai-trade-is-reignited" target="_blank" rel="noopener">TipRanks「Market Wrap: Stocks Close Higher as AI Trade Is Reignited」</a> ／ <a href="https://zai.diamond.jp/articles/-/498883" target="_blank" rel="noopener">ザイFX!「ニューヨーク外国為替市場概況・4時」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/kn_2026111202000008/" target="_blank" rel="noopener">共同通信（OANDA掲載）「為替相場 12日（日本時間3時）」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/kn_2026111102000005/" target="_blank" rel="noopener">共同通信（OANDA掲載）「為替相場 11日（日本時間6時）」</a> ／ <a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html" target="_blank" rel="noopener">Yahoo Finance「Stock market today: Wednesday, November 11」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">株式全体</span><h2><em>半導体・AI関連</em>が日米の株を押し上げ</h2><small>日本株・米国株の大きな流れ</small></div>
+
+<div class="item"><div class="num">1</div>
+<details open>
+<summary>日経平均は789円高の3日続伸、6万1,000円台を回復<span class="tag">日本株</span></summary>
+<div class="body">11日（水）の東京市場で日経平均は<b>789円01銭高の61,248円59銭</b>と3日続けて上がり、4日以来の高い水準で終えました。前の晩の米国株安を受けて一時は下げに転じましたが、アドバンテストや東京エレクトロンなど半導体関連の値がさ株に買いが入って切り返し、取引中には<b>931円高</b>まで上がる場面もありました。円安・ドル高も追い風です。ただ、東証プライムで値上がりした銘柄は<b>約54%</b>にとどまり、上げは半導体株に偏りました。TOPIXは<b>0.92%高</b>、売買代金は<b>約8兆6,968億円</b>でした。
+<div class="memo">📈 <b>メモ</b>：日経平均は株価の高い一部の銘柄の動きが大きく効く指数です。TOPIXや値上がり銘柄の割合と見比べると、相場全体がどのくらい上がったのかが分かりやすくなります。</div><br>
+<a href="https://www.zaikei.co.jp/article/20261111/877110.html" target="_blank" rel="noopener">出典: 財経新聞（フィスコ）「日経平均は大幅続伸、半導体関連株主導で6万1000円台回復」</a> ／ <a href="https://oanda.jp/lab-education/market_news/mn_1043427_202611111751" target="_blank" rel="noopener">OANDA証券「日経平均サマリー（11日）」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">2</div>
+<details>
+<summary>米国株は反発、コアウィーブの決算で「AI関連」に買い戻し<span class="tag">米国株</span></summary>
+<div class="body">11日のニューヨーク市場は3指数そろって上がり、ナスダック総合は<b>約400ポイント（1.60%）高</b>でした。AI向けのクラウド（データセンター）を手がけるコアウィーブが売上高の見通しを引き上げ、借金に頼った拡大への心配がやわらいだことで、株価は<b>2割あまり</b>上昇。半導体株にも買い戻しが広がり、前の週から大きく下げていたエヌビディアも<b>3%前後</b>反発しました。ロイターは市場関係者の「安心感からの反発」という声を伝えつつ、続くかどうかはエヌビディア次第との見方も紹介しています。
+<div class="memo">📈 <b>メモ</b>：大きな会社の決算は、その会社だけでなく「同じ業界の先行き」を測る材料として受け止められることがあります。1社の結果で関連株がそろって動くのはこのためです。</div><br>
+<a href="https://www.kiplinger.com/investing/stocks/nasdaq-adds-400-points-after-coreweave-earnings-stock-market-today" target="_blank" rel="noopener">出典: Kiplinger「Nasdaq Adds 400 Points as CoreWeave Earnings Revive the AI Trade」</a> ／ <a href="https://www.marketscreener.com/news/stocks-gain-as-coreweave-eases-worries-dollar-strengthens-ce785edbde80f62d" target="_blank" rel="noopener">ロイター（MarketScreener掲載）「Stocks gain as CoreWeave eases worries; dollar strengthens」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">3</div>
+<details>
+<summary>米国債は休場、原油は2%あまり反発<span class="tag">金利</span></summary>
+<div class="body">11日はベテランズデー（退役軍人の日）で、米国の<b>債券市場はお休み</b>でした。株式市場は開いています。10年債利回りは前の日に一時<b>5%</b>を超え、<b>4.98%前後</b>で終えたままです。2年債利回りは10日に、1日の上げ幅としては2025年4月以来の大きさでした。一方、原油は前の日の安値から戻し、米国の原油先物（WTI）は<b>2.39%高の1バレル88.08ドル</b>。イランの核物質をめぐる発言などが材料になりました。
+<div class="memo">📈 <b>メモ</b>：原油が上がると物価が上がりやすくなるため、金利が上がる方向の材料と見られることがあります。株・金利・為替は、原油ともつながっています。</div><br>
+<a href="https://www.marketscreener.com/news/stocks-gain-as-coreweave-eases-worries-dollar-strengthens-ce785edbde80f62d" target="_blank" rel="noopener">出典: ロイター（MarketScreener掲載）「Stocks gain as CoreWeave eases worries; dollar strengthens」</a> ／ <a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html" target="_blank" rel="noopener">Yahoo Finance「Stock market today: Wednesday, November 11」</a>
+</div>
+</details>
+</div>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ドル円</span><h2><em>159円94銭</em>まで上昇、160円の手前で一服</h2><small>円とドルを動かす材料</small></div>
+
+<div class="item"><div class="num">4</div>
+<details>
+<summary>ドル円は約2カ月ぶりの円安・ドル高、160円の手前では介入への警戒も<span class="tag">値動き</span></summary>
+<div class="body">11日のニューヨーク市場でドル円は一時<b>159円94銭</b>まで上がり、9月2日以来、約2カ月ぶりの円安・ドル高の水準を付けました。米国の利上げ観測からドルが全面的に買われ、ユーロも対ドルで<b>約1年半ぶりの安値</b>（1.1083ドル）まで下げています。ただ、節目の<b>160円</b>が近づくと、政府・日銀による円買い介入への警戒から上値は重くなりました。債券市場が休みで取引が薄かったことも伸び悩みの理由に挙げられています。けさ4時は<b>159.87円</b>前後（ザイFX!）です。
+<div class="memo">💱 <b>メモ</b>：160円のような「切りのいい数字」は、市場で意識されやすい水準です。過去に介入があった水準に近づくと、当局の発言ひとつで相場が大きく動くことがあります。</div><br>
+<a href="https://www.zaikei.co.jp/article/20261112/877149.html" target="_blank" rel="noopener">出典: 財経新聞（フィスコ）「NY外為：ドル・円、日米金利差拡大観測に159円台後半、心理的節目160円手前で伸び悩む」</a> ／ <a href="https://zai.diamond.jp/articles/-/498881" target="_blank" rel="noopener">ザイFX!「ドル円、上昇一服 160.00円に接近した場面では介入警戒感も」</a> ／ <a href="https://zai.diamond.jp/articles/-/498872" target="_blank" rel="noopener">ザイFX!「ニューヨーク外国為替市場概況・24時 ドル円、2カ月ぶり高値」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">5</div>
+<details>
+<summary>FRB高官から「インフレは間違った方向」の声、日銀は12月の利上げ観測が約7割<span class="tag">要人発言</span></summary>
+<div class="body">シカゴ連銀のグールズビー総裁は、10月の消費者物価指数（CPI）について「インフレは間違った方向に進んでいる」と述べ、サービスの物価が高すぎると指摘しました。ただ、12月に利上げするかについては「すべての選択肢がある」として、確実とはしませんでした。ボウマンFRB副議長も「（物価を2%に近づけるには）まだやるべきことがある」と話しています。日本側では、12月の日銀会合での利上げ観測が<b>約7割</b>で高止まりしていると外為どっとコムは伝えています。きょう10時30分には浅田日銀審議委員のあいさつがあります。
+<div class="memo">💱 <b>メモ</b>：ドル円は「米国の金利」と「日本の金利」の両方の見通しで動きます。FRBの高官と日銀の委員の発言は、セットで追うと流れがつかみやすくなります。</div><br>
+<a href="https://zai.diamond.jp/articles/-/498877" target="_blank" rel="noopener">出典: ザイFX!（フィスコ）「NY外為：ドル続伸、グールズビー米シカゴ連銀総裁は12月の利上げを確実視せず」</a> ／ <a href="https://fx.minkabu.jp/news/384089" target="_blank" rel="noopener">みんかぶFX「ボウマンFRB副議長『やるべきことがまだある』利上げついては言及避ける」</a> ／ <a href="https://www.gaitame.com/media/entry/2026/11/11/194415" target="_blank" rel="noopener">外為どっとコム「NY為替見通し＝ドル円、159円台定着なるか」</a>
+</div>
+</details>
+</div>
+
+<div class="chance">
+<div class="head">💡 円側の事情とドル側の事情</div>
+<div class="in"><b>円高の方向の材料</b>：160円が近づき、政府・日銀の円買い介入への警戒が強まっていること。12月の日銀の利上げ観測が約7割と高いこと。<br><b>円安の方向の材料</b>：米CPIの上振れとFRB高官の発言で、12月の米利上げの見方が強く、ドルが全面的に買われていること。</div>
+</div>
+<p class="src">出典：<a href="https://www.zaikei.co.jp/article/20261112/877149.html" target="_blank" rel="noopener">財経新聞（フィスコ）「NY外為：ドル・円、160円手前で伸び悩む」</a> ／ <a href="https://www.gaitame.com/media/entry/2026/11/11/194415" target="_blank" rel="noopener">外為どっとコム「NY為替見通し＝ドル円、159円台定着なるか」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">きょうと今週の予定</span><h2>きょうは<em>浅田日銀委員</em>、あすは<em>米PPI</em></h2><small>時刻は日本時間</small></div>
+<ul class="yotei">
+<li><span class="t">11/12（木）8:50</span>国内 10月の企業物価指数（予想：前年比+6.5%）</li>
+<li><span class="t">11/12（木）10:30</span><span class="hot">浅田日銀審議委員のあいさつ</span>（記者会見も予定）</li>
+<li><span class="t">11/12（木）16:00</span>英国 7〜9月期GDP（速報値）</li>
+<li><span class="t">11/12（木）22:30</span>米国 新規失業保険申請件数（予想19.5万件）</li>
+<li><span class="t">11/12（木）23:00〜</span>ハマック・クリーブランド連銀総裁、バーFRB理事の講演（24:00）／米国 10月の中古住宅販売（24:00）</li>
+<li><span class="t">11/13（金）1:15〜</span>グールズビー・シカゴ連銀総裁の講演／米国 30年債入札（3:00）／ラガルドECB総裁の講演（4:30）</li>
+<li><span class="t">11/13（金）22:30</span><span class="hot">米国 10月の生産者物価指数（PPI）</span></li>
+<li><span class="t">その先</span>FOMC 12月8〜9日（米国時間）／日銀会合 12月17・18日</li>
+</ul>
+<p class="src">出典：<a href="https://myforex.com/ja/news/dzh261112048.html" target="_blank" rel="noopener">DZHフィナンシャルリサーチ（MyForex掲載）「12日のイベントスケジュール」</a> ／ <a href="https://zai.diamond.jp/articles/-/498657" target="_blank" rel="noopener">ザイFX!「【11月9日～の週】為替相場の注目材料スケジュールと焦点」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/20261110_boj_opinions_oct/" target="_blank" rel="noopener">OANDA証券「日銀『主な意見』10月会合」</a></p>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ひとこと用語</span><h2>連載5 <em>200日移動平均線（にひゃくにち いどうへいきんせん）</em></h2><small>株と為替の基礎を1日1つ</small></div>
+<div class="item"><div class="num">5</div>
+<details>
+<summary>過去200日分の値段の平均をつないだ線。長い目で見た流れの目安<span class="tag-gold">用語</span></summary>
+<div class="body">毎日、直近200日分の終値の平均を計算して、それを線でつないだものです。1日1日の上げ下げをならして「長い目で見ると上向きか下向きか」を見るのに使われます。体重でいえば、毎朝の数字ではなく「ここ半年あまりの平均」を見るようなものです。きのうのドル円は、この線（158.71円前後）の上で推移しており、市場ではこの線の上か下かが話題になっていました。</div>
+</details>
+</div>
+</section>
+
+<div class="pull">
+半導体株に支えられて日米の株が上がり、ドル円は160円の手前まで来ました。きょうは浅田日銀委員、あすは米PPIに注目です。
+<small>— 株とドル円デイリー情報</small>
+</div>
+
+<footer>
+<div class="brand">📈 株とドル円デイリー情報</div>
+※公開されているWebの情報を自動で集めて要約したものです。特定の売買をすすめるものではありません。<br>
+数値は出典の時点のもので、遅れや誤りがあることがあります。投資の判断はご自身でお願いします。<br>
+FXはレバレッジにより大きな損失が出るおそれがあります。<br>
+生成: 2026-11-12
+</footer>
+</div>
+<div class="bn"><a href="./">📚 バックナンバー一覧へ戻る</a></div>
+</body>
+</html>
