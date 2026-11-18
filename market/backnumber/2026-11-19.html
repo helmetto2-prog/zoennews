@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>株とドル円デイリー情報 ｜ 2026年11月19日（木） 第12号</title>
+<style>
+ :root{
+ --ink:#1e2a2a;
+ --accent:#0f4c5c;
+ --accent-soft:#3d7d8f;
+ --cream:#edf3f4;
+ --paper:#ffffff;
+ --gold:#b8923c;
+ --up:#c0392b;
+ --down:#2471a3;
+ }
+ *{box-sizing:border-box;margin:0;padding:0;}
+ body{font-family:'メイリオ',Meiryo,'Hiragino Kaku Gothic ProN',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+ header{background:linear-gradient(135deg,#082f3a,#0f4c5c 55%,#3d7d8f);color:#fff;padding:30px 20px 26px;text-align:center;position:relative;overflow:hidden;}
+ header::after{content:"📈";position:absolute;right:16px;bottom:-6px;font-size:3.4rem;opacity:.18;}
+ header .kicker{font-size:.72rem;letter-spacing:.28em;opacity:.85;}
+ header h1{font-size:1.6rem;letter-spacing:.05em;margin:6px 0 4px;}
+ header p{font-size:.83rem;opacity:.92;}
+ .wrap{max-width:840px;margin:0 auto;padding:0;}
+ section{padding:26px 16px 10px;}
+ section.paper{background:var(--paper);}
+ section.cream{background:var(--cream);}
+ .badge{display:inline-block;background:var(--accent);color:#fff;font-size:.74rem;font-weight:bold;letter-spacing:.12em;padding:5px 14px;border-radius:4px 4px 4px 0;box-shadow:0 2px 5px rgba(15,76,92,.25);white-space:nowrap;}
+ .cat{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:8px 0 16px;}
+ .cat h2{font-size:1.12rem;color:var(--ink);font-weight:bold;}
+ .cat h2 em{color:var(--accent);font-style:normal;}
+ .cat small{color:#7d9599;font-size:.74rem;font-weight:normal;}
+ .item{position:relative;background:#fff;border:1px solid #d5e2e5;border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .cream .item{background:#fafdfd;}
+ .num{position:absolute;left:8px;top:2px;font-size:2.6rem;font-weight:900;color:var(--accent);opacity:.11;line-height:1;pointer-events:none;}
+ summary{cursor:pointer;padding:14px 44px 14px 54px;font-weight:bold;font-size:.98rem;list-style:none;position:relative;color:var(--ink);}
+ summary::-webkit-details-marker{display:none;}
+ summary::after{content:"＋";position:absolute;right:16px;top:13px;color:var(--accent-soft);font-weight:bold;font-size:1.1rem;}
+ details[open] summary::after{content:"－";}
+ summary:hover{background:#f0f7f8;}
+ .body{padding:6px 18px 18px 54px;font-size:.91rem;color:#39494c;border-top:1px dashed #dbe7e9;}
+ .body a{color:var(--accent);word-break:break-all;}
+ b{color:var(--accent);}
+ .memo{display:block;background:#eef5f6;border-left:4px solid var(--accent-soft);border-radius:0 6px 6px 0;padding:8px 12px;margin-top:12px;font-size:.86rem;color:#0f4c5c;}
+ .memo b{color:#082f3a;}
+ .tag{display:inline-block;background:#e5eff1;color:var(--accent);border:1px solid #a9c8cf;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-warn{display:inline-block;background:#fdeede;color:#c05a1a;border:1px solid #f0c496;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-gold{display:inline-block;background:#f7efd7;color:#8a6a12;border:1px solid var(--gold);border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .nums{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d5e2e5;font-size:.9rem;}
+ .nums th,.nums td{padding:9px 10px;border-bottom:1px solid #e3ecee;text-align:left;vertical-align:top;}
+ .nums th{background:#f0f7f8;color:var(--accent);font-size:.76rem;letter-spacing:.06em;font-weight:bold;}
+ .nums td.v{font-weight:bold;white-space:nowrap;}
+ .nums .up{color:var(--up);font-weight:bold;white-space:nowrap;}
+ .nums .down{color:var(--down);font-weight:bold;white-space:nowrap;}
+ .nums .flat{color:#7d9599;white-space:nowrap;}
+ .nums small{color:#7d9599;font-size:.72rem;font-weight:normal;}
+ .src{font-size:.74rem;color:#7d9599;margin:8px 2px 4px;}
+ .src a{color:var(--accent-soft);word-break:break-all;}
+ .chance{border:1px solid #d9e0c0;border-radius:10px;margin:6px 0 10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .chance .head{background:var(--accent);color:#fff;font-weight:bold;font-size:.86rem;letter-spacing:.06em;padding:8px 16px;}
+ .chance .in{background:#fffdf6;padding:12px 16px;font-size:.9rem;color:#4a4326;}
+ .chance .in b{color:#8a6a12;}
+ .yotei{list-style:none;background:#fff;border:1px solid #d5e2e5;border-radius:10px;padding:6px 14px;}
+ .yotei li{padding:8px 0;border-bottom:1px dashed #dbe7e9;font-size:.9rem;}
+ .yotei li:last-child{border-bottom:none;}
+ .yotei .t{display:inline-block;min-width:8.5em;color:var(--accent);font-weight:bold;}
+ .yotei .hot{color:#c05a1a;font-weight:bold;}
+ .pull{position:relative;max-width:680px;margin:22px 16px 4px;padding:18px 22px;border:1px solid #c3d8dc;border-left:5px solid var(--accent);border-radius:0 10px 10px 0;background:#fff;font-size:1rem;color:var(--ink);}
+ @media (min-width:720px){.pull{margin:22px auto 4px;}}
+ .pull small{display:block;text-align:right;margin-top:8px;color:#7d9599;font-size:.78rem;font-weight:normal;}
+ footer{background:#082f3a;color:#d3e2e6;text-align:center;font-size:.76rem;padding:20px 16px 26px;margin-top:14px;}
+ footer .brand{font-weight:bold;letter-spacing:.14em;color:#fff;font-size:.9rem;margin-bottom:4px;}
+ .bn{text-align:center;padding:16px;background:#edf3f4;}
+ .bn a{color:#0f4c5c;font-weight:bold;text-decoration:none;border:1px solid #a9c8cf;background:#e5eff1;border-radius:6px;padding:8px 18px;display:inline-block;}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">MARKET DAILY ｜ 株式・ドル円</div>
+ <h1>📈 株とドル円デイリー情報</h1>
+ <p>2026年11月19日（木） ｜ 第12号 ｜ 株式市場の全体とドル円の重要ニュース</p>
+</header>
+<div class="wrap">
+
+<section class="paper">
+<div class="cat"><span class="badge">けさの数字</span><h2>日経平均は反発もTOPIXは続落。米国株はダウ安・ナスダック高とまちまち</h2><small>11/19 6:20 時点</small></div>
+<table class="nums">
+<tr><th>指標</th><th>値</th><th>前日比</th></tr>
+<tr><td>日経平均<br><small>11/18（水）終値</small></td><td class="v">59,024.28</td><td class="up">+163.85（+0.28%）</td></tr>
+<tr><td>TOPIX<br><small>11/18（水）終値</small></td><td class="v">3,824.00</td><td class="down">−16.02（−0.42%）</td></tr>
+<tr><td>NYダウ<br><small>11/18（水）終値・米国時間</small></td><td class="v">50,198.17</td><td class="down">−561.25（−1.11%）</td></tr>
+<tr><td>S&amp;P500<br><small>11/18（水）終値・米国時間</small></td><td class="v">7,323.63</td><td class="down">−16.90（−0.23%）</td></tr>
+<tr><td>ナスダック総合<br><small>11/18（水）終値・米国時間</small></td><td class="v">24,429.89</td><td class="up">+101.50（+0.42%）</td></tr>
+<tr><td>ドル円<br><small>11/19（木）4:00 時点<br>（日本時間・共同通信）</small></td><td class="v">159.32円</td><td class="flat">+0.02円<br><small>前日の同じ時刻比（ほぼ横ばい）</small></td></tr>
+<tr><td>米10年債利回り<br><small>11/18（水）終値・米国時間</small></td><td class="v">5.07%</td><td class="down">低下<br><small>前日は5.10%</small></td></tr>
+</table>
+<p class="src">※米国株の終値は、Yahoo Financeの値と、キプリンガー（概数）・StockTitan（前日比）の値が一致しています。米10年債利回りはAP通信も5.07%（前日5.10%）と伝えています。ドル円は、フィスコの3時28分の記事でも159円29銭、OANDAによると4時31分は159.38円近辺で、159円台前半で落ち着いています。<br>出典：<a href="https://www.oanda.jp/lab-education/market_news/kn_2026111801001187/" target="_blank" rel="noopener">共同通信（OANDA掲載）「東証株価反発、163円高」</a> ／ <a href="https://www.media-ir.com/news/?p=188738" target="_blank" rel="noopener">日本インタビュ新聞社（Media-IR）「【株式市場】日経平均163円高で3日ぶり反発、エヌビディア好決算もTOPIX続落」</a> ／ <a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html" target="_blank" rel="noopener">Yahoo Finance「Stock market today: Dow and S&amp;P 500 slide, Nasdaq rises in anticipation of Anthropic IPO」</a> ／ <a href="https://www.kiplinger.com/investing/stocks/nasdaq-finds-a-path-higher-ahead-of-anthropic-ipo-stock-market-today" target="_blank" rel="noopener">キプリンガー「Nasdaq Finds a Path Higher Ahead of Anthropic IPO」</a> ／ <a href="https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026" target="_blank" rel="noopener">StockTitan「Stock Market Today Live, November 18, 2026」</a> ／ <a href="https://ca.finance.yahoo.com/news/asian-markets-mostly-decline-wall-035255840.html" target="_blank" rel="noopener">AP通信（Yahoo Finance掲載）「Wall Street zigzags lower as Nvidia and other AI stocks keep swinging」</a> ／ <a href="https://ryukyushimpo.jp/kyodo/entry-5606479.html" target="_blank" rel="noopener">共同通信（琉球新報掲載）「為替相場 19日（日本時間4時）」</a> ／ <a href="https://www.zaikei.co.jp/article/20261119/878280.html" target="_blank" rel="noopener">財経新聞（フィスコ）「NY外為：ドルは堅調、米20年債入札は冴えず」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/fomc-minutes-oct-2026/" target="_blank" rel="noopener">OANDA「【FOMC議事要旨】ほぼ全員が『追加の利上げが適切になりそう』」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">株式全体</span><h2>好決算でも買いは広がらず</h2><small>日本株・米国株の大きな流れ</small></div>
+
+<div class="item"><div class="num">1</div>
+<details open>
+<summary>日経平均は163円高で3日ぶり反発、ただしTOPIXは3日続落<span class="tag">日本株</span></summary>
+<div class="body">きのうの日経平均は163円85銭高の5万9,024円28銭と、3日ぶりに上がりました。エヌビディアの決算が市場予想を上回ったことを受けて、朝は半導体・AI関連株が買われ、一時700円を超えて上昇。ところが午前中に失速して一時500円を超えて下げ、午後にプラスへ戻すという、上下に大きく振れる1日でした。フィスコによると、アドバンテスト1社で日経平均を約255円押し上げています。一方、TOPIXは<b>0.42%安</b>と3日続落で、東証プライムでは値下がりした銘柄のほうが多くなりました。東証プライムの売買代金は約8兆500億円でした。
+<div class="memo">📈 <b>メモ</b>：日経平均が上がってもTOPIXが下がる日は、一部の値がさ株（1株の値段が高い株）が指数を押し上げ、市場全体には買いが広がっていない日の目安になります。</div><br>
+<a href="https://www.oanda.jp/lab-education/market_news/kn_2026111801001187/" target="_blank" rel="noopener">出典: 共同通信（OANDA掲載）「東証株価反発、163円高」</a> ／ <a href="https://finance.yahoo.co.jp/news/detail/4bfe6d1bd269a546c4b94d35d936c5a923e5379b" target="_blank" rel="noopener">トレーダーズ・ウェブ（Yahoo!ファイナンス掲載）「大引け概況－日経平均は3日ぶり反発」</a> ／ <a href="https://www.zaikei.co.jp/article/20261118/878245.html" target="_blank" rel="noopener">財経新聞（フィスコ）「日経平均寄与度ランキング（大引け）」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">2</div>
+<details>
+<summary>米国株はダウ561ドル安、S&amp;P500は5日続落。エヌビディアは決算後も2.9%安<span class="tag">米国株</span></summary>
+<div class="body">前夜の米国株は、ダウが561ドル25セント安、S&amp;P500が0.23%安で5日続落（6月以来の長い下げ）となる一方、ナスダック総合は0.42%高と反発しました。エヌビディアは売上高が前年の約2倍と好決算でしたが、取引が始まると売られ<b>2.9%安</b>。AI相場がどこまで続くのかという迷いが残っています。ダウを押し下げたのは医療保険株で、米政府（CMS）が高齢者向け保険の過払いを取り戻す案を示したことから、ユナイテッドヘルスが約10%下落しました。原油安でエネルギー株も下げています。小売りのTJXは好決算で大きく上げました。
+<div class="memo">📈 <b>メモ</b>：ダウは30社だけで作る指数で、1株の値段が高い会社ほど影響が大きくなります。1社の急落でダウだけが大きく下げる日は、ほかの指数とあわせて見ると全体の様子がつかみやすくなります。</div><br>
+<a href="https://www.kiplinger.com/investing/stocks/nasdaq-finds-a-path-higher-ahead-of-anthropic-ipo-stock-market-today" target="_blank" rel="noopener">出典: キプリンガー「Nasdaq Finds a Path Higher Ahead of Anthropic IPO」</a> ／ <a href="https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026" target="_blank" rel="noopener">StockTitan「Stock Market Today Live, November 18, 2026」</a> ／ <a href="https://ca.finance.yahoo.com/news/asian-markets-mostly-decline-wall-035255840.html" target="_blank" rel="noopener">AP通信（Yahoo Finance掲載）「Wall Street zigzags lower as Nvidia and other AI stocks keep swinging」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">3</div>
+<details>
+<summary>米アンソロピックが1株83ドルで値決め、きょうナスダックに上場の予定<span class="tag">米国株</span></summary>
+<div class="body">AI開発の米アンソロピックの新規株式公開（IPO）について、ブルームバーグは、公開価格が<b>1株83ドル</b>に決まったと伝えました。事前に示されていた70〜78ドルの範囲を上回る値段です。CNBCによると、範囲の上限でも会社全体の価値は約1.4兆ドルとされ、記録的な規模のIPOになります。銘柄コードは「ANT」で、米国時間19日（日本時間19日夜）にナスダック市場で取引が始まる予定です。前夜のナスダック総合の上昇は、この上場を前にした期待も一因と報じられています。
+<div class="memo">📈 <b>メモ</b>：大きな上場の初日は値段が大きく動きやすく、関連する銘柄や指数にも影響することがあります。初日の値動きだけでなく、数日後にどう落ち着くかも見ておくのが基本です。</div><br>
+<a href="https://www.bloomberg.com/news/articles/2026-11-18/anthropic-is-said-to-price-ipo-at-83-per-share" target="_blank" rel="noopener">出典: ブルームバーグ「Anthropic Is Said to Price IPO at $83 Per Share」</a> ／ <a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html" target="_blank" rel="noopener">Yahoo Finance「Stock market today: Dow and S&amp;P 500 slide, Nasdaq rises in anticipation of Anthropic IPO」</a> ／ <a href="https://www.heygotrade.com/en/news/anthropic-ipo-nasdaq-debut/" target="_blank" rel="noopener">Gotrade「Anthropic IPO Likely to Price Above Range Ahead of Debut」（CNBC・TechCrunchの報道をまとめたもの）</a>
+</div>
+</details>
+</div>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ドル円</span><h2>159円台前半でもみ合い、FRBは利上げに前向き</h2><small>円とドルを動かす材料</small></div>
+
+<div class="item"><div class="num">4</div>
+<details>
+<summary>ドル円は159円台前半で一進一退、東京は159円12銭〜65銭<span class="tag">値動き</span></summary>
+<div class="body">きのうの東京市場のドル円は、朝に159円65銭まで上がったあと、午後は米国の金利と原油の値下がり、株安への警戒から159円12銭まで下げました（フィスコ）。OANDAによると17時は159.36円近辺です。ニューヨーク市場では、原油安で米長期金利が下がり159円15銭までドルが売られましたが、FRB高官の利上げに前向きな発言とFOMC議事要旨を受けて買い戻されました（フィスコ）。けさ4時は159円32〜33銭で、前日の同じ時刻とほぼ変わりません（共同通信）。2日続いた円高はいったん止まった形です。
+<div class="memo">💱 <b>メモ</b>：円高の材料（株安・金利低下）と円安の材料（米国の利上げ観測）がぶつかると、値動きは小さくなりがちです。どちらの材料が強くなるかで、次の動きの向きが変わります。</div><br>
+<a href="https://www.zaikei.co.jp/article/20261118/878261.html" target="_blank" rel="noopener">出典: 財経新聞（フィスコ）「東京為替：ドル・円は反落、午後は主要通貨売り」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/mn_1044600_202611181706/" target="_blank" rel="noopener">OANDA「東京外国為替市場概況・17時 ドル円、もみ合い」</a> ／ <a href="https://www.zaikei.co.jp/article/20261119/878282.html" target="_blank" rel="noopener">財経新聞（フィスコ）「11月18日のNY為替概況」</a> ／ <a href="https://ryukyushimpo.jp/kyodo/entry-5606479.html" target="_blank" rel="noopener">共同通信（琉球新報掲載）「為替相場 19日（日本時間4時）」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">5</div>
+<details>
+<summary>FOMC議事要旨「ほぼ全員が追加の利上げは適切」、ウォラー理事は0.5%の利上げにも言及<span class="tag">FRB</span></summary>
+<div class="body">けさ4時に公表された10月のFOMC（米国の金融政策を決める会合）の議事要旨では、「ほぼ全員（almost all）」の参加者が、今後の追加の利上げは適切になりそうだと判断していました。9月の議事要旨の「大半（most）」より強い表現です。物価のデータが悪ければ、12月に0.25%より大きい利上げを考えてもよいとの意見も「ごく少数」から出ています。前日にはウォラーFRB理事がCNBCのインタビューで、12月に<b>0.5%の利上げ</b>を決めるか、来年は速いペースで利上げすると市場に示すべきだと話しました（ロイター）。OANDAによると、12月の0.25%の利上げは約95%織り込まれており、議事要旨のあとのドル円の反応は小幅でした。
+<div class="memo">💱 <b>メモ</b>：米国の利上げ観測が強まると、日米の金利差が意識されてドル高・円安の材料になりやすいと言われます。ただし、すでに織り込まれた分は値動きに表れにくくなります。</div><br>
+<a href="https://www.oanda.jp/lab-education/market_news/fomc-minutes-oct-2026/" target="_blank" rel="noopener">出典: OANDA「【FOMC議事要旨】ほぼ全員が『追加の利上げが適切になりそう』」</a> ／ <a href="https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026" target="_blank" rel="noopener">StockTitan「Stock Market Today Live, November 18, 2026」</a> ／ <a href="https://jp.headtopics.com/news/653186533065314815971-89968478" target="_blank" rel="noopener">ロイター（Newsweek日本版掲載）「FRB、積極的な物価対応必要 来月0.5％利上げも＝ウォラー理事」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">6</div>
+<details>
+<summary>10月の貿易収支は4,765億円の赤字、6か月続けての赤字<span class="tag">指標</span></summary>
+<div class="body">財務省がきのう発表した10月の貿易統計（速報）では、輸出が前年同月比<b>20.5%増</b>の11兆7,688億円と14か月続けて増えた一方、輸入が21.6%増の12兆2,453億円とそれを上回り、差し引き<b>4,765億円の赤字</b>でした。赤字は6か月連続です。輸出は自動車や半導体関連が伸び、輸入は原粗油（+60.5%）や半導体などの電子部品が大きく増えました。
+<div class="memo">💱 <b>メモ</b>：貿易赤字は、輸入代金を払うために円を売ってドルを買う動きが多いことを意味し、円安の方向の材料と言われます。毎月の数字より、赤字が続いているか・縮んでいるかの流れを見るのが基本です。</div><br>
+<a href="https://www.lnews.jp/2026/11/s1118602.html" target="_blank" rel="noopener">出典: LNEWS「財務省／10月の貿易6か月連続赤字、輸出20.5％増、輸入21.6％増」</a> ／ <a href="https://www.kanaloco.jp/news/economy/article-1321519.html" target="_blank" rel="noopener">共同通信（神奈川新聞掲載）「10月は4765億円の貿易赤字」</a>
+</div>
+</details>
+</div>
+
+<div class="chance">
+<div class="head">💡 円側の事情とドル側の事情</div>
+<div class="in"><b>円高の方向の材料</b>：AI関連株を中心とした株安への警戒、原油安による米長期金利の低下（米10年債は5.07%へ）、160円近くでの為替介入への警戒。<br><b>円安の方向の材料</b>：FOMC議事要旨で示された利上げに前向きな姿勢と、ウォラー理事の0.5%利上げへの言及、日米の金利差の大きさ、6か月続く日本の貿易赤字。</div>
+</div>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">きょうと今週の予定</span><h2>あす朝に全国CPI、今夜はアンソロピック上場</h2><small>時刻は日本時間</small></div>
+<ul class="yotei">
+<li><span class="t">11/19（木）</span>国内 機械受注</li>
+<li><span class="t">11/19（木）9:30</span>豪州 10月の雇用統計</li>
+<li><span class="t">11/19（木）22:30</span>米国 新規失業保険申請件数・11月のフィラデルフィア連銀製造業景況指数</li>
+<li><span class="t">11/19（木）22:30</span>ラガルドECB総裁の講演</li>
+<li><span class="t">11/19（木）22:50</span>ハマック・クリーブランド連銀総裁のあいさつ</li>
+<li><span class="t">11/19（木）夜</span><span class="hot">米アンソロピックがナスダックで取引開始の予定（米国時間19日）</span></li>
+<li><span class="t">11/20（金）0:00</span>米国 10月の景気先行指標総合指数</li>
+<li><span class="t">11/20（金）2:30</span>グールズビー・シカゴ連銀総裁の講演</li>
+<li><span class="t">11/20（金）8:30</span><span class="hot">国内 10月の全国消費者物価指数（CPI）</span></li>
+<li><span class="t">11/20（金）16:00</span>英国 10月の小売売上高</li>
+<li><span class="t">11/21（土）0:00</span>米国 11月のミシガン大学消費者態度指数（確報値）</li>
+<li><span class="t">その先</span>11/23（月）勤労感謝の日で東京市場は休場／11/26（木）米国は感謝祭で休場／FOMC 12月8〜9日（米国時間）／日銀会合 12月17・18日</li>
+</ul>
+<p class="src">※日時は変更されることがあります。<br>出典：<a href="https://myforex.com/ja/news/dzh261114015.html" target="_blank" rel="noopener">DZHフィナンシャルリサーチ（MyForex掲載）「来週の海外イベントスケジュール（2）」</a> ／ <a href="https://www.kaigaifx.com/info/2026/11/weekly-calendar-20261116.php" target="_blank" rel="noopener">海外FXお役立ちガイド「今週（11/16〜11/20）の主要経済指標」</a> ／ <a href="https://www.heygotrade.com/en/news/anthropic-ipo-nasdaq-debut/" target="_blank" rel="noopener">Gotrade「Anthropic IPO Likely to Price Above Range Ahead of Debut」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/fomc-minutes-oct-2026/" target="_blank" rel="noopener">OANDA「【FOMC議事要旨】…12月会合・ドル円の見通し」</a></p>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ひとこと用語</span><h2>連載12 <em>議事要旨（ぎじようし）</em></h2><small>株と為替の基礎を1日1つ</small></div>
+<div class="item"><div class="num">12</div>
+<details>
+<summary>会合で「だれが・どんな意見を言ったか」を、あとからまとめて公表する記録<span class="tag-gold">用語</span></summary>
+<div class="body">FRBのFOMCや日銀の会合では、決まった結果（金利を上げる・据え置く）はその日に発表されますが、話し合いの中身は数週間後に「議事要旨」として公表されます。FOMCの議事要旨は名前を出さず、「ほぼ全員」「大半」「一部」「ごく少数」といった言い方で意見の広がりを伝えるため、市場はこの言葉の変化に注目します。会議の結果が「試合のスコア」なら、議事要旨は「試合後の監督やコーチの作戦会議のメモ」のようなもので、次の試合の作戦を読む手がかりになります。</div>
+</details>
+</div>
+</section>
+
+<div class="pull">
+決算・上場・議事要旨と大きな材料が続く週です。ひとつの数字に飛びつかず、指数の中身と市場全体の広がりをあわせて見ていきましょう。
+<small>— 株とドル円デイリー情報</small>
+</div>
+
+<footer>
+<div class="brand">📈 株とドル円デイリー情報</div>
+※公開されているWebの情報を自動で集めて要約したものです。特定の売買をすすめるものではありません。<br>
+数値は出典の時点のもので、遅れや誤りがあることがあります。投資の判断はご自身でお願いします。<br>
+FXはレバレッジにより大きな損失が出るおそれがあります。<br>
+生成: 2026-11-19
+</footer>
+</div>
+<div class="bn"><a href="./">📚 バックナンバー一覧へ戻る</a></div>
+</body>
+</html>
