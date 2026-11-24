@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>株とドル円デイリー情報 ｜ 2026年11月25日（水） 第18号</title>
+<style>
+ :root{
+ --ink:#1e2a2a;
+ --accent:#0f4c5c;
+ --accent-soft:#3d7d8f;
+ --cream:#edf3f4;
+ --paper:#ffffff;
+ --gold:#b8923c;
+ --up:#c0392b;
+ --down:#2471a3;
+ }
+ *{box-sizing:border-box;margin:0;padding:0;}
+ body{font-family:'メイリオ',Meiryo,'Hiragino Kaku Gothic ProN',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+ header{background:linear-gradient(135deg,#082f3a,#0f4c5c 55%,#3d7d8f);color:#fff;padding:30px 20px 26px;text-align:center;position:relative;overflow:hidden;}
+ header::after{content:"📈";position:absolute;right:16px;bottom:-6px;font-size:3.4rem;opacity:.18;}
+ header .kicker{font-size:.72rem;letter-spacing:.28em;opacity:.85;}
+ header h1{font-size:1.6rem;letter-spacing:.05em;margin:6px 0 4px;}
+ header p{font-size:.83rem;opacity:.92;}
+ .wrap{max-width:840px;margin:0 auto;padding:0;}
+ section{padding:26px 16px 10px;}
+ section.paper{background:var(--paper);}
+ section.cream{background:var(--cream);}
+ .badge{display:inline-block;background:var(--accent);color:#fff;font-size:.74rem;font-weight:bold;letter-spacing:.12em;padding:5px 14px;border-radius:4px 4px 4px 0;box-shadow:0 2px 5px rgba(15,76,92,.25);white-space:nowrap;}
+ .cat{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:8px 0 16px;}
+ .cat h2{font-size:1.12rem;color:var(--ink);font-weight:bold;}
+ .cat h2 em{color:var(--accent);font-style:normal;}
+ .cat small{color:#7d9599;font-size:.74rem;font-weight:normal;}
+ .item{position:relative;background:#fff;border:1px solid #d5e2e5;border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .cream .item{background:#fafdfd;}
+ .num{position:absolute;left:8px;top:2px;font-size:2.6rem;font-weight:900;color:var(--accent);opacity:.11;line-height:1;pointer-events:none;}
+ summary{cursor:pointer;padding:14px 44px 14px 54px;font-weight:bold;font-size:.98rem;list-style:none;position:relative;color:var(--ink);}
+ summary::-webkit-details-marker{display:none;}
+ summary::after{content:"＋";position:absolute;right:16px;top:13px;color:var(--accent-soft);font-weight:bold;font-size:1.1rem;}
+ details[open] summary::after{content:"－";}
+ summary:hover{background:#f0f7f8;}
+ .body{padding:6px 18px 18px 54px;font-size:.91rem;color:#39494c;border-top:1px dashed #dbe7e9;}
+ .body a{color:var(--accent);word-break:break-all;}
+ b{color:var(--accent);}
+ .memo{display:block;background:#eef5f6;border-left:4px solid var(--accent-soft);border-radius:0 6px 6px 0;padding:8px 12px;margin-top:12px;font-size:.86rem;color:#0f4c5c;}
+ .memo b{color:#082f3a;}
+ .tag{display:inline-block;background:#e5eff1;color:var(--accent);border:1px solid #a9c8cf;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-warn{display:inline-block;background:#fdeede;color:#c05a1a;border:1px solid #f0c496;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-gold{display:inline-block;background:#f7efd7;color:#8a6a12;border:1px solid var(--gold);border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .nums{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d5e2e5;font-size:.9rem;}
+ .nums th,.nums td{padding:9px 10px;border-bottom:1px solid #e3ecee;text-align:left;vertical-align:top;}
+ .nums th{background:#f0f7f8;color:var(--accent);font-size:.76rem;letter-spacing:.06em;font-weight:bold;}
+ .nums td.v{font-weight:bold;white-space:nowrap;}
+ .nums .up{color:var(--up);font-weight:bold;white-space:nowrap;}
+ .nums .down{color:var(--down);font-weight:bold;white-space:nowrap;}
+ .nums .flat{color:#7d9599;white-space:nowrap;}
+ .nums small{color:#7d9599;font-size:.72rem;font-weight:normal;}
+ .src{font-size:.74rem;color:#7d9599;margin:8px 2px 4px;}
+ .src a{color:var(--accent-soft);word-break:break-all;}
+ .chance{border:1px solid #d9e0c0;border-radius:10px;margin:6px 0 10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .chance .head{background:var(--accent);color:#fff;font-weight:bold;font-size:.86rem;letter-spacing:.06em;padding:8px 16px;}
+ .chance .in{background:#fffdf6;padding:12px 16px;font-size:.9rem;color:#4a4326;}
+ .chance .in b{color:#8a6a12;}
+ .yotei{list-style:none;background:#fff;border:1px solid #d5e2e5;border-radius:10px;padding:6px 14px;}
+ .yotei li{padding:8px 0;border-bottom:1px dashed #dbe7e9;font-size:.9rem;}
+ .yotei li:last-child{border-bottom:none;}
+ .yotei .t{display:inline-block;min-width:8.5em;color:var(--accent);font-weight:bold;}
+ .yotei .hot{color:#c05a1a;font-weight:bold;}
+ .pull{position:relative;max-width:680px;margin:22px 16px 4px;padding:18px 22px;border:1px solid #c3d8dc;border-left:5px solid var(--accent);border-radius:0 10px 10px 0;background:#fff;font-size:1rem;color:var(--ink);}
+ @media (min-width:720px){.pull{margin:22px auto 4px;}}
+ .pull small{display:block;text-align:right;margin-top:8px;color:#7d9599;font-size:.78rem;font-weight:normal;}
+ footer{background:#082f3a;color:#d3e2e6;text-align:center;font-size:.76rem;padding:20px 16px 26px;margin-top:14px;}
+ footer .brand{font-weight:bold;letter-spacing:.14em;color:#fff;font-size:.9rem;margin-bottom:4px;}
+ .bn{text-align:center;padding:16px;background:#edf3f4;}
+ .bn a{color:#0f4c5c;font-weight:bold;text-decoration:none;border:1px solid #a9c8cf;background:#e5eff1;border-radius:6px;padding:8px 18px;display:inline-block;}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">MARKET DAILY ｜ 株式・ドル円</div>
+ <h1>📈 株とドル円デイリー情報</h1>
+ <p>2026年11月25日（水） ｜ 第18号 ｜ 株式市場の全体とドル円の重要ニュース</p>
+</header>
+<div class="wrap">
+
+
+<section class="paper">
+<div class="cat"><span class="badge">けさの数字</span><h2>日経平均は<em>2,207円高</em>。前夜の米国はダウ高・ナスダック安と<em>まちまち</em></h2><small>11/25 6:20 時点（日経平均・TOPIXは24日の終値）</small></div>
+<table class="nums">
+<tr><th>指標</th><th>値</th><th>前日比</th></tr>
+<tr><td>日経平均<br><small>11/24（火）終値</small></td><td class="v">58,644.63</td><td class="up">+2,207.98（+3.91%）</td></tr>
+<tr><td>TOPIX<br><small>11/24（火）終値</small></td><td class="v">3,764.88</td><td class="up">+90.66（+2.47%）</td></tr>
+<tr><td>NYダウ<br><small>11/24（火）・米国時間</small></td><td class="v">確認中</td><td class="up">+0.8%前後の上昇<br><small>出典により+0.80%〜+0.85%</small></td></tr>
+<tr><td>S&amp;P500<br><small>11/24（火）・米国時間</small></td><td class="v">確認中</td><td class="down">−0.5%前後の下落<br><small>出典により−0.49%〜−0.50%</small></td></tr>
+<tr><td>ナスダック総合<br><small>11/24（火）・米国時間</small></td><td class="v">確認中</td><td class="down">−1.5%前後の下落<br><small>出典により−1.47%〜−1.48%</small></td></tr>
+<tr><td>ドル円<br><small>11/25（水）6:00 時点<br>（共同通信）</small></td><td class="v">159.24円</td><td class="up">+0.10円（円安）<br><small>前日の同じころとの比較（共同通信）</small></td></tr>
+<tr><td>米10年債利回り<br><small>11/24（火）・米国時間</small></td><td class="v">確認中</td><td class="flat">取引終盤は4.90%前後（低下）<br><small>日本時間4:13 4.904%（みんかぶ）</small></td></tr>
+</table>
+<p class="src">※この号を作った時点（日本時間6時すぎ）では、24日の米国株3指数と米10年債の<b>確定した終値の値</b>を2つの出典で一致させられなかったため、値は「確認中」とし、各社の伝える終値段階の上げ下げの幅を載せています（ダウは「+398ドル・+0.80%」〔TipRanks〕と「+0.85%」〔MarketScreener〕で食い違いがあります）。なお第17号で「確認中」だった<b>23日（月）の終値</b>は、ダウが<b>49,595.31ドル（+1,447.98ドル・+3.01%）</b>、ナスダック総合が<b>24,089.56（+1,471.83・+6.51%）</b>、S&amp;P500は<b>+4.73%</b>でした。ドル円は、ニューヨーク市場の24日の終値が159円35銭（フィスコ）です。<br>出典：<a href="https://www.oanda.jp/lab-education/market_news/kn_2026112401000852/" target="_blank" rel="noopener">OANDA（共同通信）「東証反発、終値は2207円高」</a> ／ <a href="https://www.daily.co.jp/society/main/2026/11/24/0021068169.shtml" target="_blank" rel="noopener">デイリースポーツ（共同通信）「東証反発、終値は2207円高」</a> ／ <a href="https://www.nikkei.com/article/DGXZQOFL240OU0U6A121C2000000/" target="_blank" rel="noopener">日本経済新聞「日経平均株価大幅反発、終値2207円高の5万8644円」</a> ／ <a href="https://www.tipranks.com/news/u-s-stocks-post-mixed-results-as-nvidia-rally-fades" target="_blank" rel="noopener">TipRanks「U.S. Stocks Post Mixed Results as Nvidia Rally Fades」</a> ／ <a href="https://www.marketscreener.com/news/wall-street-set-for-lower-open-as-nvidia-fueled-ai-rally-fades-ce7851dbdb8fff26" target="_blank" rel="noopener">MarketScreener（ロイター）「Nasdaq, S&amp;P 500 fall as Nvidia-driven AI rally unwinds」</a> ／ <a href="https://fx.minkabu.jp/news/385322" target="_blank" rel="noopener">みんかぶFX「NY各市場 4時台 ダウ平均は345ドル高 ナスダックは1.7％の大幅安」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/kn_2026112502000011/" target="_blank" rel="noopener">OANDA（共同通信）「為替相場 25日（日本時間 6時）」</a> ／ <a href="https://zaikei.co.jp/article/20261125/878985.html" target="_blank" rel="noopener">財経新聞（フィスコ）「11月24日のNY為替概況」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/report_us30_20261124/" target="_blank" rel="noopener">OANDA「NYダウの振り返りと見通し（2026年11月24日）」</a> ／ <a href="https://financefeeds.com/nasdaq-falls-about-2-4-as-amd-nvidia-and-arm-give-back-huangs-rally-a-day-before-pce/" target="_blank" rel="noopener">FinanceFeeds「Nasdaq Falls About 2.4% as AMD, Nvidia and Arm Give Back Huang's Rally a Day Before PCE」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">株式全体</span><h2>東京は<em>大きく戻し</em>、米国では半導体株に<em>利益確定の売り</em></h2><small>日本株・米国株の大きな流れ</small></div>
+
+<div class="item"><div class="num">1</div>
+<details open>
+<summary>連休明けの東京は大幅反発、日経平均は2,207円高の5万8644円<span class="tag">日本株</span></summary>
+<div class="body">3連休明けの24日、日経平均は<b>2,207円98銭高（+3.91%）の5万8644円63銭</b>で取引を終えました。TOPIXも<b>90.66ポイント高（+2.47%）の3764.88</b>です（共同通信）。エヌビディアがジェンスン・フアン氏のCEO復帰を発表し、経営の先行きへの不安が和らいだことで、AIや半導体の関連株を中心に買いが広がりました。指数に占める比重の大きいアドバンテストや東京エレクトロンが上げを引っぱっています。前の取引日（20日）に3,000円を超えて下げていたことの反動の買いも入りました（共同通信）。
+<div class="memo">📈 <b>メモ</b>：日経平均は、値段の高い一部の大型株の動きに大きく左右されます（寄与度・連載10）。東証の全体の動きに近いTOPIXの上げ幅（+2.47%）が日経平均（+3.91%）より小さいのは、上げの中心が半導体の関連株だったためです。</div><br>
+<a href="https://www.oanda.jp/lab-education/market_news/kn_2026112401000852/" target="_blank" rel="noopener">出典: OANDA（共同通信）「東証反発、終値は2207円高」</a> ／ <a href="https://www.daily.co.jp/society/main/2026/11/24/0021068169.shtml" target="_blank" rel="noopener">デイリースポーツ（共同通信）「東証反発、終値は2207円高」</a> ／ <a href="https://www.nikkei.com/article/DGXZQOFL240OU0U6A121C2000000/" target="_blank" rel="noopener">日本経済新聞「日経平均株価大幅反発、終値2207円高の5万8644円」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">2</div>
+<details>
+<summary>米国株はまちまち。エヌビディアは前日の31%高から反落、ナスダックは1.5%安<span class="tag">米国株</span></summary>
+<div class="body">23日に31%上がったエヌビディアは、24日は一転して<b>6%を超えて下がり</b>、マイクロン・テクノロジーが10%を超えて下げるなど、半導体株に<b>利益確定の売り（連載18）</b>が広がりました（Yahoo Finance、TipRanks）。ナスダック総合は<b>1.5%前後</b>、S&amp;P500は<b>0.5%前後</b>下がった一方、ダウは<b>0.8%前後</b>上がり、指数によって明暗が分かれました。TipRanks は、年末の商戦への期待で小売りの株が上がったことも伝えています。11月の消費者信頼感指数は<b>103.3</b>と、予想（92.4）を大きく上回って約2年ぶりの高さでしたが（フィスコ）、ハイテク株の売りを打ち消すほどではありませんでした（FinanceFeeds）。
+<div class="memo">📈 <b>メモ</b>：日本時間5時11分の時点で、シカゴの日経平均先物は<b>5万7355円</b>と、きのうの大阪の日中取引の終値より1,625円安い水準でした（みんかぶ）。前日の米国の半導体株の動きは、東京の半導体の関連株にも映りやすい材料です。</div><br>
+<a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html" target="_blank" rel="noopener">出典: Yahoo Finance「Stock market today: Dow rises, S&amp;P 500 and Nasdaq decline as chip sector tumbles」</a> ／ <a href="https://www.tipranks.com/news/u-s-stocks-post-mixed-results-as-nvidia-rally-fades" target="_blank" rel="noopener">TipRanks「U.S. Stocks Post Mixed Results as Nvidia Rally Fades」</a> ／ <a href="https://financefeeds.com/nasdaq-falls-about-2-4-as-amd-nvidia-and-arm-give-back-huangs-rally-a-day-before-pce/" target="_blank" rel="noopener">FinanceFeeds「Nasdaq Falls About 2.4% as AMD, Nvidia and Arm Give Back Huang's Rally a Day Before PCE」</a> ／ <a href="https://zaikei.co.jp/article/20261125/878985.html" target="_blank" rel="noopener">財経新聞（フィスコ）「11月24日のNY為替概況」</a> ／ <a href="https://fx.minkabu.jp/news/385325" target="_blank" rel="noopener">みんかぶFX「NY各市場 5時台 ダウ平均は314ドル高 シカゴ日経平均先物は5万7355円」</a>
+</div>
+</details>
+</div>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ドル円</span><h2>ドル円は<em>159円台前半</em>で一進一退、今夜の<em>米PCE</em>待ち</h2><small>円とドルを動かす材料</small></div>
+
+<div class="item"><div class="num">3</div>
+<details>
+<summary>ドル円は158円75銭まで下げたあと、日本株高と米国の指標で159円台に戻す<span class="tag">値動き</span></summary>
+<div class="body">24日の東京では、前の夜に米国の金利が下がった流れで、ドル円は朝に<b>158円75銭</b>まで下げました（ザイFX！）。午後は日本株の大幅高を受けて円が売られ、夕方には<b>159円40銭</b>まで上がっています（フィスコ）。ニューヨークでは、米国の住宅価格の伸びが鈍り、長い期間の金利が下がってドルが売られ、<b>159円00銭</b>まで下げる場面がありました。その後は原油の値上がりや、消費者信頼感指数が予想を上回ったことでドルの売りが一服し、<b>159円35銭</b>で終えました（フィスコ）。けさ6時は<b>159円24〜25銭</b>です（共同通信）。
+<div class="memo">💱 <b>メモ</b>：2日つづけて、株価の上げ下げと米国の金利の上げ下げがドル円を反対の向きに引っぱり、159円をはさんだ狭い幅の動きになっています。</div><br>
+<a href="https://zai.diamond.jp/articles/-/499561" target="_blank" rel="noopener">出典: ザイFX！「東京外国為替市場概況・12時 ドル円、下げ渋り」</a> ／ <a href="https://jp.investing.com/news/forex-news/article-1768767" target="_blank" rel="noopener">Investing.com（フィスコ）「東京為替：ドル・円は切り返し、午後は159円台に再浮上」</a> ／ <a href="https://zaikei.co.jp/article/20261125/878985.html" target="_blank" rel="noopener">財経新聞（フィスコ）「11月24日のNY為替概況」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/kn_2026112502000011/" target="_blank" rel="noopener">OANDA（共同通信）「為替相場 25日（日本時間 6時）」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">4</div>
+<details>
+<summary>今夜22:30に米国の指標がまとめて発表。FRBの12月の利上げの見方を確かめる場に<span class="tag">FRB</span></summary>
+<div class="body">あす26日は米国が感謝祭で休場のため、今夜（日本時間25日22:30）は、<b>10月のPCE物価指数（連載15）</b>・7〜9月期のGDP改定値・10月の耐久財受注・新規失業保険申請件数がいっぺんに発表されます（ザイFX！、みんかぶ）。Yahoo Finance によると、市場では12月8・9日のFOMCで<b>0.25%の利上げ</b>が約95%の確率で見込まれています。物価の数字が予想からどれだけずれるかで、この見方と米国の金利、ひいてはドル円が動く可能性があります。日本時間26日4時にはFRBのベージュブック（地区連銀経済報告）も出ます。
+<div class="memo">💱 <b>メモ</b>：休み前に大事な指標が重なる日は、発表の直後に値が大きく動き、そのあと休みで取引が薄くなることがあります。</div><br>
+<a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html" target="_blank" rel="noopener">出典: Yahoo Finance「Stock market today」</a> ／ <a href="https://zai.diamond.jp/articles/-/499478" target="_blank" rel="noopener">ザイFX！「【11月23日～の週】為替相場の注目材料スケジュールと焦点」</a> ／ <a href="https://minkabu.jp/news/4670285" target="_blank" rel="noopener">みんかぶ（FX/為替）「来週の主な予定 仏格付け見直し 田村日銀委員、米PCEと豪CPI ブラックフライデー」</a>
+</div>
+</details>
+</div>
+
+<div class="chance">
+<div class="head">💡 円側の事情とドル側の事情</div>
+<div class="in"><b>円高の方向の材料</b>：160円の手前での介入（連載3）への警戒。米国の住宅価格の鈍さなどで、米国の長い期間の金利が下がっていること。27日の東京都区部CPIや、26日の田村日銀委員の発言しだいで、日銀の12月の利上げの見方が強まる可能性。<br><b>円安の方向の材料</b>：日本株の大幅高で、株安のときの円買い（リスク回避・連載14）が戻されたこと。消費者信頼感指数が約2年ぶりの高さだったこと。FRBの12月の利上げがほぼ見込まれ、日米の金利差が大きいままであること。</div>
+</div>
+<p class="src">出典：<a href="https://zaikei.co.jp/article/20261125/878985.html" target="_blank" rel="noopener">財経新聞（フィスコ）「11月24日のNY為替概況」</a> ／ <a href="https://jp.investing.com/news/forex-news/article-1768767" target="_blank" rel="noopener">Investing.com（フィスコ）「東京為替：ドル・円は切り返し、午後は159円台に再浮上」</a> ／ <a href="https://zai.diamond.jp/articles/-/499478" target="_blank" rel="noopener">ザイFX！「【11月23日～の週】為替相場の注目材料スケジュールと焦点」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">きょうと今週の予定</span><h2>今夜は<em>米PCE・GDP改定値</em>、27日に<em>東京都区部CPI</em></h2><small>時刻は日本時間</small></div>
+<ul class="yotei">
+<li><span class="t">11/25（水）朝</span>米国 デル・テクノロジーズ、HP、ワークデイの決算（米国時間24日の引け後）</li>
+<li><span class="t">11/25（水）8:50</span>国内 10月の企業向けサービス価格指数</li>
+<li><span class="t">11/25（水）9:30</span>オーストラリア 10月のCPI</li>
+<li><span class="t">11/25（水）14:00</span>日銀 消費者物価のコア指標</li>
+<li><span class="t">11/25（水）22:30</span><span class="hot">米国 10月のPCE物価指数・個人所得・個人消費／7〜9月期GDP（改定値）／10月の耐久財受注／新規失業保険申請件数</span></li>
+<li><span class="t">11/26（木）4:00</span>米国 ベージュブック（地区連銀経済報告）</li>
+<li><span class="t">11/26（木）10:00</span>田村日銀審議委員のあいさつ（記者会見も予定）</li>
+<li><span class="t">11/26（木）</span>米国は感謝祭で株式・債券市場が休場</li>
+<li><span class="t">11/27（金）8:30</span><span class="hot">国内 11月の東京都区部CPI</span></li>
+<li><span class="t">11/27（金）</span>米国はブラックフライデーで短縮取引／S&amp;Pによるフランスの格付けの見直し</li>
+<li><span class="t">その先</span>FOMCの結果発表 12/10（木）4:00／日銀会合 12月17・18日</li>
+</ul>
+<p class="src">※日時は変更されることがあります。出典：<a href="https://zai.diamond.jp/articles/-/499478" target="_blank" rel="noopener">ザイFX！「【11月23日～の週】為替相場の注目材料スケジュールと焦点」</a> ／ <a href="https://minkabu.jp/news/4670285" target="_blank" rel="noopener">みんかぶ（FX/為替）「来週の主な予定 仏格付け見直し 田村日銀委員、米PCEと豪CPI ブラックフライデー」</a> ／ <a href="https://www.gaitame.com/media/entry/2026/11/22/070000" target="_blank" rel="noopener">外為どっとコム マネ育チャンネル「来週のドル円相場はどうなる？11/23週のイベント予定」</a></p>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ひとこと用語</span><h2>連載18 <em>利益確定売り（りえきかくていうり）</em></h2><small>株と為替の基礎を1日1つ</small></div>
+<div class="item"><div class="num">18</div>
+<details>
+<summary>値上がりした株や通貨を売って、それまでの利益を手元に確保すること<span class="tag-gold">用語</span></summary>
+<div class="body">買った値段より高くなったところで売ると、そこで初めて利益が確定します。短い間に大きく上がったあとは、「いまのうちに利益を確保しておこう」という売りがまとまって出やすく、上げの翌日に値が下がる理由のひとつになります。「利食い（りぐい）」とも言います。前日に31%上がったエヌビディアが翌日に下がったような動きを説明するときに、よく使われる言葉です。たとえるなら、育てた野菜の値が急に上がったので、もっと上がるのを待たずに今のうちに市場へ出す、という動きです。</div>
+</details>
+</div>
+</section>
+
+<div class="pull">
+大きな下げ、大きな戻り、そして一部の巻き戻し。今夜は休み前の大事な指標が重なります。数字が出たら、予想との差を落ち着いて確かめていきましょう。
+<small>— 株とドル円デイリー情報</small>
+</div>
+
+<footer>
+<div class="brand">📈 株とドル円デイリー情報</div>
+※公開されているWebの情報を自動で集めて要約したものです。特定の売買をすすめるものではありません。<br>
+数値は出典の時点のもので、遅れや誤りがあることがあります。投資の判断はご自身でお願いします。<br>
+FXはレバレッジにより大きな損失が出るおそれがあります。<br>
+生成: 2026-11-25
+</footer>
+</div>
+<div class="bn"><a href="./">📚 バックナンバー一覧へ戻る</a></div>
+</body>
+</html>
