@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>株とドル円デイリー情報 ｜ 2026年11月27日（金） 第20号</title>
+<style>
+ :root{
+ --ink:#1e2a2a;
+ --accent:#0f4c5c;
+ --accent-soft:#3d7d8f;
+ --cream:#edf3f4;
+ --paper:#ffffff;
+ --gold:#b8923c;
+ --up:#c0392b;
+ --down:#2471a3;
+ }
+ *{box-sizing:border-box;margin:0;padding:0;}
+ body{font-family:'メイリオ',Meiryo,'Hiragino Kaku Gothic ProN',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;}
+ header{background:linear-gradient(135deg,#082f3a,#0f4c5c 55%,#3d7d8f);color:#fff;padding:30px 20px 26px;text-align:center;position:relative;overflow:hidden;}
+ header::after{content:"📈";position:absolute;right:16px;bottom:-6px;font-size:3.4rem;opacity:.18;}
+ header .kicker{font-size:.72rem;letter-spacing:.28em;opacity:.85;}
+ header h1{font-size:1.6rem;letter-spacing:.05em;margin:6px 0 4px;}
+ header p{font-size:.83rem;opacity:.92;}
+ .wrap{max-width:840px;margin:0 auto;padding:0;}
+ section{padding:26px 16px 10px;}
+ section.paper{background:var(--paper);}
+ section.cream{background:var(--cream);}
+ .badge{display:inline-block;background:var(--accent);color:#fff;font-size:.74rem;font-weight:bold;letter-spacing:.12em;padding:5px 14px;border-radius:4px 4px 4px 0;box-shadow:0 2px 5px rgba(15,76,92,.25);white-space:nowrap;}
+ .cat{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:8px 0 16px;}
+ .cat h2{font-size:1.12rem;color:var(--ink);font-weight:bold;}
+ .cat h2 em{color:var(--accent);font-style:normal;}
+ .cat small{color:#7d9599;font-size:.74rem;font-weight:normal;}
+ .item{position:relative;background:#fff;border:1px solid #d5e2e5;border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .cream .item{background:#fafdfd;}
+ .num{position:absolute;left:8px;top:2px;font-size:2.6rem;font-weight:900;color:var(--accent);opacity:.11;line-height:1;pointer-events:none;}
+ summary{cursor:pointer;padding:14px 44px 14px 54px;font-weight:bold;font-size:.98rem;list-style:none;position:relative;color:var(--ink);}
+ summary::-webkit-details-marker{display:none;}
+ summary::after{content:"＋";position:absolute;right:16px;top:13px;color:var(--accent-soft);font-weight:bold;font-size:1.1rem;}
+ details[open] summary::after{content:"－";}
+ summary:hover{background:#f0f7f8;}
+ .body{padding:6px 18px 18px 54px;font-size:.91rem;color:#39494c;border-top:1px dashed #dbe7e9;}
+ .body a{color:var(--accent);word-break:break-all;}
+ b{color:var(--accent);}
+ .memo{display:block;background:#eef5f6;border-left:4px solid var(--accent-soft);border-radius:0 6px 6px 0;padding:8px 12px;margin-top:12px;font-size:.86rem;color:#0f4c5c;}
+ .memo b{color:#082f3a;}
+ .tag{display:inline-block;background:#e5eff1;color:var(--accent);border:1px solid #a9c8cf;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-warn{display:inline-block;background:#fdeede;color:#c05a1a;border:1px solid #f0c496;border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .tag-gold{display:inline-block;background:#f7efd7;color:#8a6a12;border:1px solid var(--gold);border-radius:4px;padding:1px 8px;font-size:.7rem;margin-left:6px;vertical-align:middle;font-weight:normal;}
+ .nums{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d5e2e5;font-size:.9rem;}
+ .nums th,.nums td{padding:9px 10px;border-bottom:1px solid #e3ecee;text-align:left;vertical-align:top;}
+ .nums th{background:#f0f7f8;color:var(--accent);font-size:.76rem;letter-spacing:.06em;font-weight:bold;}
+ .nums td.v{font-weight:bold;white-space:nowrap;}
+ .nums .up{color:var(--up);font-weight:bold;white-space:nowrap;}
+ .nums .down{color:var(--down);font-weight:bold;white-space:nowrap;}
+ .nums .flat{color:#7d9599;white-space:nowrap;}
+ .nums small{color:#7d9599;font-size:.72rem;font-weight:normal;}
+ .src{font-size:.74rem;color:#7d9599;margin:8px 2px 4px;}
+ .src a{color:var(--accent-soft);word-break:break-all;}
+ .chance{border:1px solid #d9e0c0;border-radius:10px;margin:6px 0 10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+ .chance .head{background:var(--accent);color:#fff;font-weight:bold;font-size:.86rem;letter-spacing:.06em;padding:8px 16px;}
+ .chance .in{background:#fffdf6;padding:12px 16px;font-size:.9rem;color:#4a4326;}
+ .chance .in b{color:#8a6a12;}
+ .yotei{list-style:none;background:#fff;border:1px solid #d5e2e5;border-radius:10px;padding:6px 14px;}
+ .yotei li{padding:8px 0;border-bottom:1px dashed #dbe7e9;font-size:.9rem;}
+ .yotei li:last-child{border-bottom:none;}
+ .yotei .t{display:inline-block;min-width:8.5em;color:var(--accent);font-weight:bold;}
+ .yotei .hot{color:#c05a1a;font-weight:bold;}
+ .pull{position:relative;max-width:680px;margin:22px 16px 4px;padding:18px 22px;border:1px solid #c3d8dc;border-left:5px solid var(--accent);border-radius:0 10px 10px 0;background:#fff;font-size:1rem;color:var(--ink);}
+ @media (min-width:720px){.pull{margin:22px auto 4px;}}
+ .pull small{display:block;text-align:right;margin-top:8px;color:#7d9599;font-size:.78rem;font-weight:normal;}
+ footer{background:#082f3a;color:#d3e2e6;text-align:center;font-size:.76rem;padding:20px 16px 26px;margin-top:14px;}
+ footer .brand{font-weight:bold;letter-spacing:.14em;color:#fff;font-size:.9rem;margin-bottom:4px;}
+ .bn{text-align:center;padding:16px;background:#edf3f4;}
+ .bn a{color:#0f4c5c;font-weight:bold;text-decoration:none;border:1px solid #a9c8cf;background:#e5eff1;border-radius:6px;padding:8px 18px;display:inline-block;}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">MARKET DAILY ｜ 株式・ドル円</div>
+ <h1>📈 株とドル円デイリー情報</h1>
+ <p>2026年11月27日（金） ｜ 第20号 ｜ 株式市場の全体とドル円の重要ニュース</p>
+</header>
+<div class="wrap">
+
+<section class="paper">
+<div class="cat"><span class="badge">けさの数字</span><h2>日経平均は487円高で反発。米国は感謝祭で休場、ドル円は159円台前半で静か</h2><small>11/27 6:20 時点（日経平均・TOPIXは26日の終値）</small></div>
+<table class="nums">
+<tr><th>指標</th><th>値</th><th>前日比</th></tr>
+<tr><td>日経平均<br><small>11/26（木）終値</small></td><td class="v">57,499.16</td><td class="up">+487.54（+0.86%）</td></tr>
+<tr><td>TOPIX<br><small>11/26（木）終値</small></td><td class="v">3,750.40</td><td class="up">+4.20（+0.11%）</td></tr>
+<tr><td>NYダウ<br><small>11/26（木）・米国時間</small></td><td class="v">休場</td><td class="flat">感謝祭のため<br><small>直近は25日の終値 50,182.95</small></td></tr>
+<tr><td>S&amp;P500<br><small>11/26（木）・米国時間</small></td><td class="v">休場</td><td class="flat">感謝祭のため<br><small>直近は25日の終値 7,182.78</small></td></tr>
+<tr><td>ナスダック総合<br><small>11/26（木）・米国時間</small></td><td class="v">休場</td><td class="flat">感謝祭のため<br><small>直近は25日の終値 23,585.80</small></td></tr>
+<tr><td>ドル円<br><small>11/27（金）6:00 時点（共同通信）</small></td><td class="v">159.27〜159.28円</td><td class="down">−0.11円（円高）<br><small>前日の同じころとの比較（共同通信）</small></td></tr>
+<tr><td>米10年債利回り<br><small>11/26（木）・米国時間</small></td><td class="v">休場</td><td class="flat">感謝祭のため債券市場も休み</td></tr>
+</table>
+<p class="src">※日経平均・TOPIXは、共同通信とフィスコの値が一致しています。ドル円は共同通信の日本時間6時の値で、26日の東京は158円95銭〜159円26銭、ロンドンの時間帯も159円20銭前後で推移しました（みんかぶ）。米国の3指数の「直近の終値」は第19号に載せた25日の値です。<br>出典：<a href="https://www.oanda.jp/lab-education/market_news/kn_2026112602000055/" target="_blank" rel="noopener">OANDA（共同通信）「東京株式 26日終値」</a> ／ <a href="https://www.zaikei.co.jp/article/20261126/879295.html" target="_blank" rel="noopener">財経新聞（フィスコ）「日経平均大引け：前日比487.54円高の57499.16円」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/kn_2026112702000008/" target="_blank" rel="noopener">OANDA（共同通信）「為替相場 27日（日本時間6時）」</a> ／ <a href="https://fx.minkabu.jp/news/385505" target="_blank" rel="noopener">みんかぶFX「ドル円159.20近辺、ユーロドル1.0960近辺＝ロンドン為替」</a> ／ <a href="https://fx.minkabu.jp/news/385498" target="_blank" rel="noopener">みんかぶFX「【海外市場の注目ポイント】米感謝祭」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">株式全体</span><h2>半導体株に買い戻し。ただ日銀の利上げの見方と米国の休みで伸び悩む</h2><small>日本株・米国株の大きな流れ</small></div>
+
+<div class="item"><div class="num">1</div>
+<details open>
+<summary>日経平均は487円高の5万7499円。一時1,200円を超える上げから伸び悩む<span class="tag">日本株</span></summary>
+<div class="body">26日の日経平均は、前日比<b>487円54銭高（+0.86%）の5万7499円16銭</b>でした。前日に大きく売られたAI・半導体の関連株が買い戻され、日米の長い期間の金利の低下や韓国株の反発も追い風になり、午前には上げ幅が<b>1,200円を超えて5万8200円台</b>まで上がりました（トレーダーズ・ウェブ）。その後は、日銀の田村審議委員の発言で追加の利上げの見方が強まったことや、米国が休みで積極的な買いが続かなかったことから、上げ幅を縮めています（フィスコ）。値がさの半導体の関連株2銘柄だけで日経平均を<b>約393円</b>押し上げた一方、<b>TOPIXは+0.11%</b>と小幅で、東証プライムの値上がりは749銘柄・値下がりは751銘柄とほぼ半々でした。売買代金は<b>約6兆8200億円</b>（概算）です。
+<div class="memo">📈 <b>メモ</b>：日経平均が大きく上げても、値上がりと値下がりの銘柄数がほぼ同じなら、上げは一部の銘柄に偏っていたと読めます（寄与度・連載10）。TOPIXや銘柄数を並べて見ると、相場の広がりがわかります。</div><br>
+<a href="https://finance.yahoo.co.jp/news/detail/76eecc7215bb48ae930c64917ba6d2898e4b0c93" target="_blank" rel="noopener">出典: Yahoo!ファイナンス（トレーダーズ・ウェブ）「明日の戦略－伸び悩むもプラスは確保、米国休場であすは材料難」</a> ／ <a href="https://www.zaikei.co.jp/article/20261126/879302.html" target="_blank" rel="noopener">財経新聞（フィスコ）「日経平均寄与度ランキング（大引け）～日経平均は反発」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">2</div>
+<details>
+<summary>米国は感謝祭で休場。きょうは株式が日本時間28日3時に終わる短縮取引<span class="tag">米国株</span></summary>
+<div class="body">26日（木）の米国は感謝祭（サンクスギビング）で、株式・債券の市場が休みでした。そのため、けさの表の米国の行は「休場」です。27日（金）はニューヨーク証券取引所・ナスダックともに<b>米国時間13時（日本時間28日3時）</b>に取引を終える短縮取引です（フィデリティ）。この日はブラックフライデーで休む市場の参加者も多く、取引はとても薄くなりそうだと伝えられています（みんかぶ）。25日は、AIの関連株の売りでダウが一時1,000ドルを超えて下げたあと、164ドル高まで戻して休みに入っています（第19号）。
+<div class="memo">📈 <b>メモ</b>：参加者が少ない日は、ふだんなら小さな注文でも値段が大きく動くことがあります（きょうの用語・流動性）。休み明けの値動きは、薄い取引の影響も割り引いて見るのがコツです。</div><br>
+<a href="https://www.fidelity.com/learning-center/smart-money/stock-market-holidays" target="_blank" rel="noopener">出典: フィデリティ「Stock market holidays 2026」</a> ／ <a href="https://fx.minkabu.jp/news/385498" target="_blank" rel="noopener">みんかぶFX「【海外市場の注目ポイント】米感謝祭」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">3</div>
+<details>
+<summary>中東で緊張。サウジ最大級の製油所への攻撃で、原油は1バレル83ドル台<span class="tag">地政学</span></summary>
+<div class="body">イエメンの武装組織フーシ派は25日、サウジアラビア東部の<b>ラスタヌラ製油所</b>（処理能力は日量55万バレル）を攻撃したと表明しました。サウジ側の連合軍は、ラスタヌラの上空で無人機4機を撃ち落としたと発表し、製油所に当たったかどうかは明らかにしていません（ロイター）。この報道を受けて、ニューヨークの原油先物（WTI・1月物）は25日、<b>1.63ドル高（+1.99%）の1バレル83.68ドル</b>で終えました（みんかぶ）。中東の情勢と原油の動きは、休み明けの市場の焦点の一つとされています。
+<div class="memo">📈 <b>メモ</b>：原油が上がると、ガソリンや電気代を通じて物価を押し上げやすくなり、中央銀行の利上げの判断にもかかわってきます。日本は原油の多くを輸入するため、原油高は円が売られる材料と見られることもあります。</div><br>
+<a href="https://www.newsweekjapan.jp/articles/-/341264" target="_blank" rel="noopener">出典: ニューズウィーク日本版（ロイター）「フーシ派、サウジ最大製油所を攻撃と表明」</a> ／ <a href="https://fx.minkabu.jp/news/385446" target="_blank" rel="noopener">みんかぶFX「続伸、フーシ派がサウジ最大級の製油所を攻撃＝NY原油概況」</a>
+</div>
+</details>
+</div>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ドル円</span><h2>田村日銀委員「12月、あるいはそれ以降」に利上げを判断。ドル円は159円台前半</h2><small>円とドルを動かす材料</small></div>
+
+<div class="item"><div class="num">4</div>
+<details>
+<summary>田村日銀委員「悠々として急ぐ」。利上げは12月も含めて判断<span class="tag">日銀</span></summary>
+<div class="body">日銀の田村直樹審議委員は26日、甲府市で講演し、お金を借りやすい環境がまだ続いているとして、<b>「政策金利を中立水準に早く持っていく必要がある」</b>と述べました（共同通信・中立金利は連載4）。今後の利上げの進め方は<b>「悠々として急ぐ」</b>ことが求められているとし、物価が一段と上振れしやすい環境にあるとの見方も示しています（みんかぶ）。午後の記者会見では、追加の利上げを<b>「12月、あるいはそれ以降の金融政策決定会合で考えていきたい」</b>と話し、AIの関連株を中心とした株価の調整が実体経済に与える影響も点検するとしました（時事通信）。
+<div class="memo">💱 <b>メモ</b>：日銀の委員の発言は、次の会合で何が決まりそうかを読む手がかりになります。「12月に決める」とは言っていない点も含めて、言葉の細かな違いに市場は反応します。</div><br>
+<a href="https://ryukyushimpo.jp/kyodo/entry-5616276.html" target="_blank" rel="noopener">出典: 琉球新報（共同通信）「日銀の利上げ「悠々として急ぐ」 田村審議委員、環境は依然緩和的」</a> ／ <a href="https://www.nippon.com/ja/articles/-/58069" target="_blank" rel="noopener">nippon.com（時事通信）「追加利上げ、12月含め判断＝株安の動向点検―田村日銀委員」</a> ／ <a href="https://fx.minkabu.jp/news/385501" target="_blank" rel="noopener">みんかぶFX「ドル円は午前に159円割れも続かず＝東京為替概況」</a>
+</div>
+</details>
+</div>
+
+<div class="item"><div class="num">5</div>
+<details>
+<summary>ドル円は一時159円割れも続かず。米国の休みで値動きは小さめ<span class="tag">値動き</span></summary>
+<div class="body">26日の東京では、田村委員の発言を受けて円が買われ、ドル円は午前に<b>158円95銭</b>まで下げました。その後はドルが買い戻され、午後には<b>159円26銭</b>まで戻しています。米国が感謝祭で休みのため、取引そのものは低調でした（みんかぶ）。けさ6時は<b>159円27〜28銭</b>で、前日の同じころより11銭の円高です（共同通信）。一方で、ドル円は160円が近いことから、日米の協調介入への警戒は続いていると伝えられています（フィスコ）。参加者が少ない日は急な値動きにも注意が要るとされ、上は19日の高値159円97銭と160円、下は20日の安値158円42銭が目安として挙げられています（外為どっとコム・DZH）。
+<div class="memo">💱 <b>メモ</b>：「介入への警戒」は、実際に介入があるかどうかとは別に、それ自体が上値を重くする材料として働くことがあります（為替介入・連載3、口先介入・連載6）。</div><br>
+<a href="https://fx.minkabu.jp/news/385501" target="_blank" rel="noopener">出典: みんかぶFX「ドル円は午前に159円割れも続かず＝東京為替概況」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/kn_2026112702000008/" target="_blank" rel="noopener">OANDA（共同通信）「為替相場 27日（日本時間6時）」</a> ／ <a href="https://zai.diamond.jp/articles/-/499753" target="_blank" rel="noopener">ザイFX！（フィスコ）「ドル・円は伸び悩みか、米引き締め観測も為替介入に警戒」</a> ／ <a href="https://www.gaitame.com/media/entry/2026/11/26/193212" target="_blank" rel="noopener">外為どっとコム マネ育チャンネル「NY為替見通し＝ドル円、感謝祭休場で動意薄も相場の急変に要警戒」</a>
+</div>
+</details>
+</div>
+
+<div class="chance">
+<div class="head">💡 円側の事情とドル側の事情</div>
+<div class="in"><b>円高の方向の材料</b>：田村日銀委員が「中立水準に早く」と述べ、日銀の12月の利上げの見方が強まりやすいこと。160円の手前での介入（連載3）への警戒。米国の関税案や中東の緊張で、円が買われやすい場面があること。<br><b>円安の方向の材料</b>：FRBの12月の利上げがほぼ見込まれ（CMEのFedWatchで97%台）、日米の金利差が大きいままであること。原油の値上がりは、輸入の多い日本には円が売られる材料と見られることもあること。</div>
+</div>
+<p class="src">出典：<a href="https://www.nippon.com/ja/articles/-/58069" target="_blank" rel="noopener">nippon.com（時事通信）「追加利上げ、12月含め判断」</a> ／ <a href="https://zai.diamond.jp/articles/-/499753" target="_blank" rel="noopener">ザイFX！（フィスコ）「ドル・円は伸び悩みか」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/beigebook-nov-2026/" target="_blank" rel="noopener">OANDA「11月ベージュブックの要点とドル円」</a></p>
+</section>
+
+<section class="cream">
+<div class="cat"><span class="badge">きょうと今週の予定</span><h2>けさ8:30に東京都区部CPI。来週末は米雇用統計</h2><small>時刻は日本時間</small></div>
+<ul class="yotei">
+<li><span class="t">11/27（金）8:30</span><span class="hot">国内 11月の東京都区部CPI（生鮮食品を除くコアの予想は前年比+2.9%前後・10月は+2.6%）</span></li>
+<li><span class="t">11/27（金）</span>ドイツの11月の失業率／ユーロ圏の11月の景況感指数／フランスの7〜9月期GDP改定値</li>
+<li><span class="t">11/27（金）〜28日（土）3:00</span>米国はブラックフライデーで株式が短縮取引（米国時間13時まで）</li>
+<li><span class="t">11/28（土）14:00</span>FOMCの前の、FRB高官の発言を控える期間（ブラックアウト）が始まる</li>
+<li><span class="t">12/4（金）22:30</span><span class="hot">米国 11月の雇用統計</span></li>
+<li><span class="t">その先</span>FOMCの結果発表 12/10（木）4:00／米国 11月のCPI 12/10（木）22:30／日銀会合 12月17・18日</li>
+</ul>
+<p class="src">※日時は変更されることがあります。都区部CPIの予想は媒体によって少し違い、時事通信は+3.0%としています。出典：<a href="https://www.zaikei.co.jp/article/20261121/878686.html" target="_blank" rel="noopener">財経新聞（フィスコ）「国内外の注目経済指標：景気・物価指標に注目」</a> ／ <a href="https://fx.minkabu.jp/news/385159" target="_blank" rel="noopener">みんかぶFX「【今週の注目材料】東京都区部消費者物価指数はしっかりとした伸びを期待」</a> ／ <a href="https://finance.yahoo.co.jp/news/detail/35e8f3ec067f5a8b2022f55f21613ba16a22fb9a" target="_blank" rel="noopener">Yahoo!ファイナンス（時事通信）「〔週間指標予測〕11月の都区部コアCPI、3.0％上昇」</a> ／ <a href="https://www.fidelity.com/learning-center/smart-money/stock-market-holidays" target="_blank" rel="noopener">フィデリティ「Stock market holidays 2026」</a> ／ <a href="https://www.oanda.jp/lab-education/market_news/beigebook-nov-2026/" target="_blank" rel="noopener">OANDA「11月ベージュブックの要点とドル円」</a></p>
+</section>
+
+<section class="paper">
+<div class="cat"><span class="badge">ひとこと用語</span><h2>連載20 <em>流動性（りゅうどうせい）</em></h2><small>株と為替の基礎を1日1つ</small></div>
+<div class="item"><div class="num">20</div>
+<details>
+<summary>買いたい時に買え、売りたい時に売れる「取引のしやすさ」のこと<span class="tag-gold">用語</span></summary>
+<div class="body">市場に参加する人や注文が多いほど、思った値段ですぐに売り買いができます。これを「流動性が高い」と言います。反対に、感謝祭のような休みの日は参加者が減り、「流動性が低い（薄い）」状態になって、少しの注文でも値段が飛ぶように動くことがあります。たとえるなら、人の多い朝市ではすぐに相手が見つかるのに、閉店まぎわの市場では相手が少なく、値段が極端になりやすいようなものです。ドル円は世界で最も取引の多い通貨の組み合わせの一つですが、それでも休みの日は動きが荒くなることがあります。</div>
+</details>
+</div>
+</section>
+
+<div class="pull">
+米国が休みのあいだも、日銀の発言と中東のニュースが相場を動かしました。けさ8時30分の都区部CPIで、物価の勢いを確かめていきましょう。
+<small>— 株とドル円デイリー情報</small>
+</div>
+
+<footer>
+<div class="brand">📈 株とドル円デイリー情報</div>
+※公開されているWebの情報を自動で集めて要約したものです。特定の売買をすすめるものではありません。<br>
+数値は出典の時点のもので、遅れや誤りがあることがあります。投資の判断はご自身でお願いします。<br>
+FXはレバレッジにより大きな損失が出るおそれがあります。<br>
+生成: 2026-11-27
+</footer>
+</div>
+<div class="bn"><a href="./">📚 バックナンバー一覧へ戻る</a></div>
+</body>
+</html>
